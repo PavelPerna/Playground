@@ -1,0 +1,335 @@
+body {
+    background: #333333;
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center; /* Center the game container */
+}
+#game-container {
+    max-width: 1200px; /* Increased max-width for three columns */
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+    border: 1px solid #888888; /* Border for the whole container */
+    background: #444444; /* Background for the whole container */
+    padding: 10px;
+}
+#sidebar {
+    width: 40px;
+    background: #444444;
+    padding: 10px;
+    border-right: 1px solid #888888; /* Only right border */
+    transition: width 0.3s;
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+#sidebar.expanded {
+    width: 280px; /* Wider sidebar for content */
+}
+#sidebar-toggle {
+    background: #555555;
+    color: #cccccc;
+    border: 1px solid #888888;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#sidebar-toggle:hover {
+    background: #666666;
+}
+.menu-item {
+    background: #555555;
+    color: #cccccc;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap; /* Prevent wrapping in collapsed state */
+}
+.menu-item:hover {
+    background: #666666;
+}
+.menu-item.active {
+    background: #2196F3; /* Highlight active menu item */
+    border-color: #2196F3;
+}
+#sidebar-content {
+    display: none; /* Initially hidden, shown when sidebar expands */
+    padding-top: 10px;
+}
+#sidebar.expanded #sidebar-content {
+    display: block;
+}
+
+/* Common styles for sections in sidebar */
+.section-content {
+    background: #333333;
+    padding: 10px;
+    border: 1px solid #555555;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.section-content h2, .section-content h3, .section-content h4 {
+    color: #eeeeee;
+    margin-top: 0;
+    border-bottom: 1px solid #555555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.section-content label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+.section-content input[type="text"],
+.section-content textarea,
+.section-content select {
+    width: calc(100% - 12px); /* Account for padding */
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #222222;
+    border: 1px solid #555555;
+    color: #eeeeee;
+    border-radius: 3px;
+}
+.section-content textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+.setting-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.setting-item label {
+    margin: 0; /* Override default label margin */
+    flex-shrink: 0;
+}
+.setting-item input[type="range"] {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    height: 8px;
+    background: #555555;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+.setting-item input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+.setting-item input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+.setting-item span {
+    width: 30px; /* Fixed width for value display */
+    text-align: right;
+}
+
+.add-button {
+    background: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.add-button:hover {
+    background: #45a049;
+}
+
+/* Wizard specific styles */
+.wizard-container {
+    background: #2b2b2b;
+    padding: 15px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.wizard-step {
+    padding: 10px 0;
+}
+.wizard-step button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.list-item {
+    background: #2b2b2b;
+    border: 1px solid #555555;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.list-item-name {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+.list-item-controls {
+    align-self: flex-end;
+    margin-top: -25px; /* Adjust to float right */
+}
+.action-button {
+    background: #555555;
+    color: #cccccc;
+    border: 1px solid #888888;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 11px;
+    border-radius: 3px;
+    margin-left: 5px; /* Spacing between buttons */
+}
+.action-button:hover {
+    background: #666666;
+}
+.action-button.delete {
+    background: #d32f2f; /* Red for delete */
+    border-color: #d32f2f;
+}
+.action-button.delete:hover {
+    background: #c62828;
+}
+
+
+/* Main Game Area */
+#main-game {
+    flex-grow: 1; /* Takes remaining space */
+    background: #3a3a3a; /* Slightly different background for main content */
+    padding: 10px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#history {
+    max-height: 180px; /* Increased history height */
+    overflow-y: auto;
+    background: #2a2a2a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555555;
+    font-size: 13px;
+    border-radius: 4px;
+}
+#history p {
+    margin: 3px 0;
+    color: #bbbbbb;
+}
+#scene {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #eeeeee;
+    line-height: 1.5;
+    flex-grow: 1; /* Allow scene to take available space */
+}
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* More space between buttons */
+    margin-bottom: 15px;
+}
+#choices button {
+    background: #555555;
+    color: #cccccc;
+    border: 1px solid #888888;
+    padding: 8px 15px; /* Larger padding for choices */
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+}
+#choices button:hover {
+    background: #666666;
+}
+#text-input {
+    width: calc(100% - 80px); /* Adjust width for button */
+    padding: 8px;
+    background: #2a2a2a;
+    border: 1px solid #555555;
+    color: #eeeeee;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+#submit-text {
+    background: #555555;
+    color: #cccccc;
+    border: 1px solid #888888;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+}
+#submit-text:hover {
+    background: #666666;
+}
+#error-message {
+    background: #d32f2f;
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Right Panel Styles */
+#right-panel {
+    width: 250px; /* Fixed width for the right panel */
+    background: #444444;
+    padding: 10px;
+    border-left: 1px solid #888888; /* Only left border */
+    flex-shrink: 0; /* Prevent panel from shrinking */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel-section {
+    background: #333333;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between sections within the panel */
+}
+
+.panel-section h2 {
+    color: #eeeeee;
+    margin-top: 0;
+    border-bottom: 1px solid #555555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#player-stats-content p, #inventory p {
+    margin: 5px 0;
+    color: #bbbbbb;
+}
+
+#inventory {
+    /* Styles for the inventory content area */
+    background: #2a2a2a; /* Match history background */
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}

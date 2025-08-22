@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posraná Otrocká Hra</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="sidebar">
+            <div id="sidebar-toggle" onclick="toggleSidebar()">☰</div>
+            <div class="menu-item" onclick="showSection('characters')" data-section="characters">👤 Postavy</div>
+            <div class="menu-item" onclick="showSection('stories')" data-section="stories">📜 Příběhy</div>
+            <div class="menu-item" onclick="showSection('locations')" data-section="locations">📍 Lokace</div>
+            <div class="menu-item" onclick="showSection('system')" data-section="system">⚙️ Systém</div>
+            <div id="sidebar-content">
+                <div id="characters-section" class="section-content">
+                    <h2>Správa Postav</h2>
+                    <div id="character-list-display">
+                        <h3>Existující Postavy</h3>
+                        <div id="character-list"></div>
+                    </div>
+
+                    <button onclick="startCharacterWizard()" class="add-button">Přidat Novou Postavu</button>
+
+                    <div id="character-wizard" class="wizard-container" style="display: none;">
+                        <h3>Průvodce Postavou</h3>
+
+                        <div id="char-step-1" class="wizard-step">
+                            <h4>Krok 1: Základní informace</h4>
+                            <label for="char-name">Jméno:</label>
+                            <input type="text" id="char-name" placeholder="Jméno postavy"><br>
+
+                            <label for="char-race">Rasa:</label>
+                            <input type="text" id="char-race" placeholder="Lidská, Elf, Trpaslík..."><br>
+
+                            <label for="char-appearance">Vzhled:</label>
+                            <textarea id="char-appearance" placeholder="Popiš vzhled postavy..."></textarea><br>
+                            <button onclick="nextCharacterWizardStep()">Další</button>
+                            <button onclick="resetCharacterWizard()">Zrušit</button>
+                        </div>
+
+                        <div id="char-step-2" class="wizard-step" style="display: none;">
+                            <h4>Krok 2: Osobnost a sexualita</h4>
+                            <label for="char-personality">Osobnost:</label>
+                            <textarea id="char-personality" placeholder="Popiš osobnostní rysy..."></textarea><br>
+                            <label for="char-sexuality">Sexualita:</label>
+                            <input type="text" id="char-sexuality" placeholder="Hetero, Gay, Bi, Nezadáno..."><br>
+                            <button onclick="prevCharacterWizardStep()">Zpět</button>
+                            <button onclick="nextCharacterWizardStep()">Další</button>
+                        </div>
+
+                        <div id="char-step-3" class="wizard-step" style="display: none;">
+                            <h4>Krok 3: Atributy a dovednosti</h4>
+                            <label for="char-attributes">Atributy (JSON formát):</label>
+                            <textarea id="char-attributes" placeholder='{"síla": 10, "obratnost": 8}'></textarea><br>
+                            <label for="char-skills">Dovednosti (oddělené čárkou):</label>
+                            <input type="text" id="char-skills" placeholder="boj, špionáž, diplomacie"><br>
+                            <button onclick="prevCharacterWizardStep()">Zpět</button>
+                            <button onclick="saveCharacterFromWizard()">Uložit Postavu</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="stories-section" class="section-content" style="display: none;">
+                    <h2>Správa Příběhů</h2>
+                    <div id="story-list-display">
+                        <h3>Existující Příběhy (Akce)</h3>
+                        <div id="story-list"></div>
+                    </div>
+
+                    <button onclick="startStoryWizard()" class="add-button">Přidat Nový Příběh</button>
+
+                    <div id="story-wizard" class="wizard-container" style="display: none;">
+                        <h3>Průvodce Příběhem</h3>
+                        <div id="story-step-1" class="wizard-step">
+                            <h4>Krok 1: Akce a Odpověď</h4>
+                            <input type="text" id="story-action" placeholder="Akce (např. 'líznout boty')">
+                            <textarea id="story-response" placeholder="Co vypravěč řekne..."></textarea>
+                            <button onclick="nextStoryWizardStep()">Další</button>
+                        </div>
+                        <div id="story-step-2" class="wizard-step" style="display: none;">
+                            <h4>Krok 2: Lokace a Postavy</h4>
+                            <input type="text" id="story-location" placeholder="Název lokace (musí existovat)">
+                            <textarea id="story-characters" placeholder="Jména postav (čárkami oddělené, musí existovat)"></textarea>
+                            <button onclick="prevStoryWizardStep()">Zpět</button>
+                            <button onclick="nextStoryWizardStep()">Další</button>
+                        </div>
+                        <div id="story-step-3" class="wizard-step" style="display: none;">
+                            <h4>Krok 3: Historický Kontext a Cíl</h4>
+                            <textarea id="story-history-context" placeholder="Relevantní historický kontext (čárkami oddělené události)"></textarea>
+                            <textarea id="story-goal" placeholder="Cíl tohoto příběhového segmentu"></textarea>
+                            <button onclick="prevStoryWizardStep()">Zpět</button>
+                            <button onclick="saveStoryFromWizard()">Uložit Příběh</button>
+                        </div>
+                        <input type="hidden" id="story-key"> </div>
+                </div>
+
+                <div id="locations-section" class="section-content" style="display: none;">
+                    <h2>Správa Lokací</h2>
+                    <div id="location-list-display">
+                        <h3>Existující Lokace</h3>
+                        <div id="location-list"></div>
+                    </div>
+
+                    <button onclick="startLocationWizard()" class="add-button">Přidat Novou Lokaci</button>
+
+                    <div id="location-wizard" class="wizard-container" style="display: none;">
+                        <h3>Průvodce Lokací</h3>
+                        <div id="loc-step-1" class="wizard-step">
+                            <h4>Krok 1: Název Lokace</h4>
+                            <input type="text" id="loc-name" placeholder="Název lokace">
+                            <button onclick="nextLocationWizardStep()">Další</button>
+                        </div>
+                        <div id="loc-step-2" class="wizard-step" style="display: none;">
+                            <h4>Krok 2: Popis Lokace</h4>
+                            <textarea id="loc-desc" placeholder="Popis lokace"></textarea>
+                            <button onclick="prevLocationWizardStep()">Zpět</button>
+                            <button onclick="saveLocationFromWizard()">Uložit Lokaci</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="system-section" class="section-content">
+                    <h2>Nastavení vypravěče</h2>
+                    <label for="narrator-tone">Tón vypravěče:</label>
+                    <select id="narrator-tone">
+                        <option value="extreme">Extrémně sprostý</option>
+                        <option value="mocking">Posměšný</option>
+                        <option value="dominant">Dominantní</option>
+                    </select>
+                    <label for="narrator-instructions">Instrukce pro vypravěče:</label>
+                    <textarea id="narrator-instructions" placeholder="Instrukce pro vypravěče"></textarea>
+                    <button onclick="saveSystemSettings()">Uložit Nastavení Vypravěče</button>
+
+                    <h3 style="margin-top: 20px;">Text-to-Speech (TTS) Nastavení</h3>
+                    <div class="setting-item">
+                        <label for="tts-enabled">Povolit TTS:</label>
+                        <input type="checkbox" id="tts-enabled" onchange="saveSystemSettings()">
+                    </div>
+                    <div class="setting-item">
+                        <label for="tts-voice">Hlas:</label>
+                        <select id="tts-voice" onchange="saveSystemSettings()">
+                            </select>
+                    </div>
+                    <div class="setting-item">
+                        <label for="tts-pitch">Výška hlasu:</label>
+                        <input type="range" id="tts-pitch" min="0.1" max="2" value="1" step="0.1" oninput="document.getElementById('tts-pitch-value').innerText = this.value" onchange="saveSystemSettings()">
+                        <span id="tts-pitch-value">1.0</span>
+                    </div>
+                    <div class="setting-item">
+                        <label for="tts-rate">Rychlost:</label>
+                        <input type="range" id="tts-rate" min="0.1" max="10" value="1" step="0.1" oninput="document.getElementById('tts-rate-value').innerText = this.value" onchange="saveSystemSettings()">
+                        <span id="tts-rate-value">1.0</span>
+                    </div>
+                    <button onclick="testTtsVoice()" class="add-button" id="test-tts-button">Test Hlasu</button>
+
+
+                    <h3 style="margin-top: 20px;">Správa Dat Hry</h3>
+                    <button onclick="exportGameData()" class="add-button">Exportovat data hry</button>
+                    <input type="file" id="importFileInput" accept=".json" style="display: none;">
+                    <button onclick="document.getElementById('importFileInput').click()" class="add-button">Importovat data hry</button>
+                    <button onclick="startGame()" class="add-button" style="background: #2196F3 !important; border-color: #2196F3 !important;">Spustit Novou Hru</button>
+                </div>
+            </div>
+        </div>
+        <div id="main-game">
+            <h1>Posraná Otrocká Hra</h1>
+            <div id="history"></div>
+            <p id="scene">Načítám scénu...</p>
+            <div id="choices">
+                </div>
+            <div>
+                <input type="text" id="text-input" placeholder="Zadej akci, ty děvko...">
+                <button id="submit-text" onclick="customAction()">Udělat</button>
+            </div>
+            <div id="error-message"></div>
+        </div>
+        <div id="right-panel">
+            <div id="player-stats-section" class="panel-section">
+                <h2>Hráčovy Statistiky</h2>
+                <div id="player-stats-content">
+                    <p>Jméno: Otrok</p>
+                    <p>Zdraví: 100/100</p>
+                    <p>Ponížení: 50%</p>
+                    <p>Poslušnost: 80%</p>
+                    </div>
+            </div>
+            <div id="inventory-section" class="panel-section">
+                <h2>Inventář</h2>
+                <div id="inventory">Inventář: Prázdný</div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
