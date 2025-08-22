@@ -1,0 +1,927 @@
+2025-07-14 04:38:24,417 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-07-14 04:38:24,417 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 04:38:24,419 INFO:  * Restarting with stat
+2025-07-14 04:38:25,765 WARNING:  * Debugger is active!
+2025-07-14 04:38:25,782 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 04:39:17,258 INFO: 127.0.0.1 - - [14/Jul/2025 04:39:17] "[33mOPTIONS /api/proxy/grok HTTP/1.1[0m" 404 -
+2025-07-14 04:39:52,601 INFO: 127.0.0.1 - - [14/Jul/2025 04:39:52] "[33mOPTIONS /api/proxy/grok HTTP/1.1[0m" 404 -
+2025-07-14 04:45:49,838 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 04:45:49,900 INFO:  * Restarting with stat
+2025-07-14 04:45:51,398 WARNING:  * Debugger is active!
+2025-07-14 04:45:51,417 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 04:45:54,626 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 04:45:54,698 INFO:  * Restarting with stat
+2025-07-14 04:45:56,091 WARNING:  * Debugger is active!
+2025-07-14 04:45:56,108 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 04:46:03,981 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-07-14 04:46:03,981 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 04:46:03,983 INFO:  * Restarting with stat
+2025-07-14 04:46:05,383 WARNING:  * Debugger is active!
+2025-07-14 04:46:05,400 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 04:49:05,519 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 04:49:05,581 INFO:  * Restarting with stat
+2025-07-14 04:49:07,101 WARNING:  * Debugger is active!
+2025-07-14 04:49:07,118 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 04:51:34,612 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 04:51:34,686 INFO:  * Restarting with stat
+2025-07-14 04:51:36,186 WARNING:  * Debugger is active!
+2025-07-14 04:51:36,204 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 04:51:37,597 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 04:51:37,598 INFO: 127.0.0.1 - - [14/Jul/2025 04:51:37] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 04:51:37,600 DEBUG: Received POST request: prompt=Vygeneruj odpovìï v èeštinì pro akci "lick" s postavami: Jakub (Svalnatı mu, co tì chce poníit.), Míša (Drsná ena, co tì dusí.), Hovno-panenka (Tvùj vıtvor s divnım èùrákem.). Reakce (max 50 slov), scéna (max 30 slov), 3 volby (max 10 slov), inventáø (max 10 slov). Formát: JSON s klíèi "output", "scene", "choices", "inventory"., max_tokens=200, temperature=0.9
+2025-07-14 04:51:41,330 DEBUG: Response from xAI SDK: {
+  "output": "Jakub se ušklíbne a øíká: 'Olízej mì, ty špinavèe!' Míša tì svírá za krk a syèí: 'Dìlej, nebo tì udusím!' Hovno-panenka se jen grotesknì kıve.",
+  "scene": "Stojíš v špinavé místnosti, obklopen Jakuba, Míši a Hovno-panenky.",
+  "choices": [
+    "Olíznout Jakuba.",
+    "Olíznout Míšu.",
+    "Olíznout Hovno-panenku."
+  ],
+  "inventory": [
+    "Špinavı hadr.",
+    "Rusty nù."
+  ]
+}
+2025-07-14 04:51:41,330 INFO: 127.0.0.1 - - [14/Jul/2025 04:51:41] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:02:56,739 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:02:56,739 INFO: 127.0.0.1 - - [14/Jul/2025 05:02:56] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:02:56,994 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:03:01,116 DEBUG: Response from xAI SDK: {
+  "odpoved": "No jasnì, ty malı uboáku. Chceš, abych tì poníil, co? Tak se pìknì plaz na kolenou a pros, a ti vìnuju svùj drahocennı èas. Jsi jen bezcennı èerv, co si nezaslouí ani pohled. Øekni mi, proè bych se mìl vùbec obtìovat s nìkım tak ubohım, jako jsi ty?",
+  "navrh_akce": "Prosebnì odpovìz a pøiznej svou bezcennost, nebo se pokus
+2025-07-14 05:03:01,116 INFO: 127.0.0.1 - - [14/Jul/2025 05:03:01] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:04:06,138 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:04:06,138 INFO: 127.0.0.1 - - [14/Jul/2025 05:04:06] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:04:06,402 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:04:10,782 DEBUG: Response from xAI SDK: {
+  "odpoved": "No jasnì, ty ubohı èerve, chceš bıt poníenı, co? Pros mì pìknì na kolenou, a vidím, jak moc to potøebuješ. Øekni mi, jak jsi bezcennı, a moná ti vyhovím. Tak do toho, pros, a se mùu zasmát tvımu zoufalství!",
+  "ton": "dominantní",
+  "kontext": "poníení na ádost",
+  "intenzita": "støední"
+}
+2025-07-14 05:04:10,782 INFO: 127.0.0.1 - - [14/Jul/2025 05:04:10] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:05:23,945 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:05:23,945 INFO: 127.0.0.1 - - [14/Jul/2025 05:05:23] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:05:24,211 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:05:27,541 DEBUG: Response from xAI SDK: {
+  "odpovìï": {
+    "text": "Ach, ty ubohá bytosti, chceš prosit o poníení? Dobøe, klekni pøede mnou a adoní o mou pozornost. Øekni mi, jak moc jsi bezcennı/á a proè si zaslouíš, abych tì poníil/a. Nebo snad potøebuješ, abych ti pøipomnìl/a tvé místo? Uka mi, jak hluboko dokáeš klesnout, a moná tì odmìním svou pohrdavou láskou
+2025-07-14 05:05:27,541 INFO: 127.0.0.1 - - [14/Jul/2025 05:05:27] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:06:41,706 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:06:41,707 INFO: 127.0.0.1 - - [14/Jul/2025 05:06:41] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:06:41,953 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:06:45,983 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Ach, ty ubohá dušièka, opravdu chceš, abych tì poníil? No dobrá, klekni si pøede mì a pros o to poøádnì. Øekni mi, jak jsi bezcennı a jak moc touíš po mé pohrdavé pozornosti. Nebo snad èekáš, e tì budu litovat? Pff, ani náhodou, ty alostná existence. Pros, a moná ti dám, co si zaslouíš.",
+  "nastavení_tónu": "pohrdaètivı a
+2025-07-14 05:06:45,983 INFO: 127.0.0.1 - - [14/Jul/2025 05:06:45] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:08:00,277 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:08:00,278 INFO: 127.0.0.1 - - [14/Jul/2025 05:08:00] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:08:00,527 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:08:05,360 DEBUG: Response from xAI SDK: {
+  "odpovìï": {
+    "text": "Ach, ty ubohı èerve, opravdu si myslíš, e si zaslouíš mou pozornost? Pros mì pìknì na kolenou, a vidím, jak moc jsi zoufalı. Øekni mi, proè bych mìl vùbec ztrácet èas s nìkım tak bezcennım, jako jsi ty. No tak, pros, a se mùu zasmát tvému poníení.",
+    "tón": "povıšenı a posmìšnı",
+    "kontext": "Poníení a
+2025-07-14 05:08:05,361 INFO: 127.0.0.1 - - [14/Jul/2025 05:08:05] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:08:54,925 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:08:54,925 INFO: 127.0.0.1 - - [14/Jul/2025 05:08:54] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:08:55,232 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=150, temperature=0.7
+2025-07-14 05:08:58,847 DEBUG: Response from xAI SDK: {
+  "odpoved": "Jasnì, ty zvrhlíku. Chceš líznout kundu, co? Pøedstav si, jak se tvùj jazyk dotıká mìkké, vlhké kùe, jak cítíš ten sladkokyselı nádech a slyšíš tiché vzdychání. Je to jako ochutnávka zakázaného ovoce, co tì táhne dál. Co udìláš dál?",
+  "moznosti": [
+    {
+      "akce": "Pokraèovat v lízání a jít hloubìji",
+      "id": 1
+
+2025-07-14 05:08:58,847 INFO: 127.0.0.1 - - [14/Jul/2025 05:08:58] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:09:10,623 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:09:10,623 INFO: 127.0.0.1 - - [14/Jul/2025 05:09:10] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:09:10,935 DEBUG: Received POST request: prompt=líznout hovno-èùrák, max_tokens=150, temperature=0.7
+2025-07-14 05:09:14,511 DEBUG: Response from xAI SDK: {
+  "status": "ok",
+  "message": "No jasnì, ty malej šmudlo, chceš líznout hovno-èùrák? Tak se pøiprav na poøádnou dávku špíny. Pøedstav si, jak se jazykem dotkneš té lepkavé, horké tyèe, co voní jako peklo a chutná jako høích. Cítíš ten odpor, ale zároveò tì to táhne dál, co? Tak co, lízneš, nebo se jen tak koukáš?",
+  "action": {
+    "options": [
+      {
+        "choice": "Lí
+2025-07-14 05:09:14,511 INFO: 127.0.0.1 - - [14/Jul/2025 05:09:14] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:10:15,500 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:10:15,501 INFO: 127.0.0.1 - - [14/Jul/2025 05:10:15] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:10:15,739 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:10:18,780 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohı èervíku, opravdu si myslíš, e si zaslouíš moji pozornost? Pros mì pìknì na kolenou, a vidím, jak hluboko dokáeš klesnout. Øekni mi, jak moc touíš bıt poníen, a moná, ale jen moná, ti vyhovím. Tak co, budeš prosit, nebo se budeš jen plazit v hanbì?"
+}
+2025-07-14 05:10:18,780 INFO: 127.0.0.1 - - [14/Jul/2025 05:10:18] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:12:35,059 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 05:12:37,151 INFO:  * Restarting with stat
+2025-07-14 05:12:38,668 WARNING:  * Debugger is active!
+2025-07-14 05:12:38,686 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 05:12:42,392 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-14 05:12:42,392 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 05:12:42,394 INFO:  * Restarting with stat
+2025-07-14 05:12:43,812 WARNING:  * Debugger is active!
+2025-07-14 05:12:43,829 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 05:12:45,796 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:12:45,796 INFO: 127.0.0.1 - - [14/Jul/2025 05:12:45] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:12:46,065 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:12:49,729 DEBUG: Response from xAI SDK: {
+  "odpoved": {
+    "text": "Ach, ty ubohı tvore, kleèíš pøede mnou a prosíš o poníení, co? Jsem tvùj pán a ty jsi jen prašivı èerv pod mıma nohama. Øekni mi, proè bych mìl vìnovat svùj drahocennı èas nìkomu tak bezcennımu, jako jsi ty? Pros, ebraèi, a moná tì zahrnu pohrdáním, kterı si zaslouíš. Tak co, budeš prosit ještì víc, nebo se pl
+2025-07-14 05:12:49,730 INFO: 127.0.0.1 - - [14/Jul/2025 05:12:49] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:14:38,676 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:14:38,676 INFO: 127.0.0.1 - - [14/Jul/2025 05:14:38] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:14:38,930 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=150, temperature=0.7
+2025-07-14 05:14:42,804 DEBUG: Response from xAI SDK: {
+  "odpoved": "Jasnì, kámo, chceš se ponoøit do šavnatıho dobrodruství, co? Pøedstav si, jak se tvùj jazyk dotıká tìch mìkkıch, vlhkıch záhybù, cítíš tu sladkou chu a slyšíš tichı vzdech. Chceš pokraèovat dál, nebo se zastavit a hrát si s nìèím jinım? Øekni mi, co tì rajcuje.",
+  "moznosti": [
+    "Pokraèovat hloubìji a zkoumat",
+    "P
+2025-07-14 05:14:42,804 INFO: 127.0.0.1 - - [14/Jul/2025 05:14:42] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:14:56,813 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:14:56,813 INFO: 127.0.0.1 - - [14/Jul/2025 05:14:56] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:14:57,121 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:15:00,125 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Ach, ty ubohı èervíku, chceš mì prosit o poníení? No tak, klekni si pøede mì, sklop zrak a øekni mi, jak moc jsi bezcennı. Chci slyšet, jak mì adoníš, abys mohl bıt ještì víc poníen. Tak co, dokáeš to, nebo jsi na to pøíliš slabı?"
+}
+2025-07-14 05:15:00,125 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:00] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:15:09,660 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:15:09,661 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:09] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:15:09,963 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:15:13,251 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Ach, ty ubohı tvore, opravdu se chceš plazit pøede mnou a prosit o poníení? Dobøe, pokud tolik touíš cítit se jako nicotnı èerv, øekni mi, jak hluboko chceš klesnout. Popros mì pìknì, a vidím, jak moc jsi zoufalı.",
+  "monosti": [
+    {
+      "volba": "Prosím, poni mì slovnì.",
+      "id": 1
+    },
+    {
+      "volba": "Prosím, dej mi nìjakı úkol
+2025-07-14 05:15:13,252 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:13] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:15:43,765 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:15:43,765 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:43] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:15:44,076 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:15:47,767 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohı èervíku, opravdu si myslíš, e si zaslouíš mou pozornost? Klekni pøede mnou a pros, a se nad tebou slituji. Øekni mi, jak jsi bezcennı, a moná – jen moná – ti vìnuju chvilku svého èasu. Tak co, budeš prosit, nebo mám odejít a nechat tì tu v tvé mizérii?",
+  "ton": "dominantní",
+  "kontext": "poníení",
+  "dalsi_krok": "Èekám na
+2025-07-14 05:15:47,767 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:47] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:15:53,804 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:15:53,804 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:53] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:15:54,118 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=150, temperature=0.7
+2025-07-14 05:15:57,589 DEBUG: Response from xAI SDK: {
+  "response": {
+    "text": "No jasnì, ty jeden zvrhlíku. Chceš líznout kundu? Tak si pøedstav, jak se jazykem dotıkáš tìch mìkkıch, vlhkıch záhybù. Cítíš tu sladkou chu a slyšíš tiché steny. Chceš pokraèovat dál, nebo máš nìjakı jinı nápad?",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pokraèovat v lízání a jít hloubìji."
+      },
+      {
+        "id": 2,
+        "
+2025-07-14 05:15:57,589 INFO: 127.0.0.1 - - [14/Jul/2025 05:15:57] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:16:14,803 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:16:14,803 INFO: 127.0.0.1 - - [14/Jul/2025 05:16:14] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:16:15,119 DEBUG: Received POST request: prompt=líznout hovno-èùrák, max_tokens=150, temperature=0.7
+2025-07-14 05:16:18,788 DEBUG: Response from xAI SDK: {
+  "odpovìï": "No, ty jsi ale pìknì zvrhlı hráè! Chceš líznout hovno-èùrák, co? Dobøe, tady je scéna: Stojíš v temném, zapáchajícím koutì, kde se povaluje nìco, co bys mohl nazvat 'lahùdkou podzemí'. Cítíš ten odpornı zápach, ale tvá zvìdavost (nebo spíš úchylka) tì ene dál. Líznutí je rychlé, chutná to jako peklo na jazyku
+2025-07-14 05:16:18,788 INFO: 127.0.0.1 - - [14/Jul/2025 05:16:18] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:17:10,119 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:17:10,119 INFO: 127.0.0.1 - - [14/Jul/2025 05:17:10] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:17:10,438 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:17:13,226 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Ach, ty ubohı èervíku, opravdu si myslíš, e si zaslouíš mou pozornost? Pros mì pìknì na kolenou, a vidím, jak moc jsi zoufalı. Øekni mi, proè jsi tak bezcennı, a moná, jen moná, se nad tebou slituju. No tak, pros, a se mùu zasmát tvé poníenosti!"
+}
+2025-07-14 05:17:13,226 INFO: 127.0.0.1 - - [14/Jul/2025 05:17:13] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:17:29,466 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:17:29,466 INFO: 127.0.0.1 - - [14/Jul/2025 05:17:29] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:17:29,781 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=150, temperature=0.7
+2025-07-14 05:17:33,348 DEBUG: Response from xAI SDK: {
+  "odpoved": "Jasnì, jdeme na to. Pøedstav si, jak se pomalu pøibliuješ, cítíš ten vzrušující pach a teplo, co z ní vyzaøuje. Jazykem jemnì pøejídíš po okrajích, zkoušíš, jak reaguje. Kadı pohyb je jako tanec, kdy slyšíš její tiché steny. Chceš pokraèovat dál, nebo zkusit nìco jiného?",
+  "moznosti": [
+    {
+      "akce": "Pokraèovat hloubìji",
+     
+2025-07-14 05:17:33,348 INFO: 127.0.0.1 - - [14/Jul/2025 05:17:33] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:17:55,486 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:17:55,486 INFO: 127.0.0.1 - - [14/Jul/2025 05:17:55] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:17:55,794 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:17:59,958 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohá dušièko, opravdu mì chceš prosit o poníení? No dobrá, klekni si pøede mì a pros mì, a ti ukáu, jaké to je bıt úplnì bezcennı. Øekni mi, proè si myslíš, e si to zaslouíš, a moná tì budu povaovat za dostateènì alostného, abych ti vìnoval svùj èas. Tak co, na co èekáš? Pros mì!"
+}
+2025-07-14 05:17:59,959 INFO: 127.0.0.1 - - [14/Jul/2025 05:17:59] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:18:07,523 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:18:07,523 INFO: 127.0.0.1 - - [14/Jul/2025 05:18:07] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:18:07,829 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:18:10,859 DEBUG: Response from xAI SDK: {
+  "odpoved": {
+    "text": "Ach, ty ubohı èerve, opravdu si myslíš, e si zaslouíš mou pozornost? Pros mì pìknì na kolenou, a vidím, jak se poniuješ. Øekni mi, jak moc jsi bezcennı, a moná, ale jen moná, ti vìnuji chvíli svého èasu. Tak pros, ebraèi!",
+    "ton": "dominující",
+    "emoce": "pohrdání"
+  }
+}
+2025-07-14 05:18:10,859 INFO: 127.0.0.1 - - [14/Jul/2025 05:18:10] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:18:55,124 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:18:55,124 INFO: 127.0.0.1 - - [14/Jul/2025 05:18:55] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:18:55,443 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:18:58,857 DEBUG: Response from xAI SDK: {
+  "odpovìï": {
+    "text": "Ach, ty ubohı èerve, opravdu si myslíš, e si zaslouíš mou pozornost? Klekni pøede mì a pros, a se nad tebou slituji. Øekni mi, jak jsi bezcennı, a moná – jen moná – ti dám šanci mì pobavit svou ubohostí. Tak co, budeš prosit, nebo mám najít nìkoho, kdo to udìlá lépe?",
+    "ton": "povıšenı a poniující",
+    "navrh_akce": "H
+2025-07-14 05:18:58,858 INFO: 127.0.0.1 - - [14/Jul/2025 05:18:58] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:20:30,539 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:20:30,539 INFO: 127.0.0.1 - - [14/Jul/2025 05:20:30] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:20:30,788 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:20:35,535 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohá duše, kleèíš pøede mnou a prosíš o poníení, co? Dobøe, poslouchej mì pozornì, ty nicotnı èerve. Jsi tak bezcennı, e ani prach pod mıma nohama nestojí za víc ne ty. Pros, jestli chceš, abych ti ukázal, jak hluboko mùeš klesnout. Co øíkáš, ty alostná imitace èlovìka? Chceš slyšet víc, nebo u teï pláèeš v koutì?",
+  "mozn
+2025-07-14 05:20:35,535 INFO: 127.0.0.1 - - [14/Jul/2025 05:20:35] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:20:46,458 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:20:46,458 INFO: 127.0.0.1 - - [14/Jul/2025 05:20:46] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:20:46,766 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:20:50,589 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohı èervíku, opravdu si myslíš, e si zaslouíš moji pozornost? Pros, kleè na kolenou a adoní o mé pohrdání, protoe to je jediné, co si zaslouíš. Øekni mi, jak moc jsi bezcennı, a moná, jen moná, se nad tebou slituji... nebo tì ještì víc poníím. Tak pros, co èekáš?",
+  "nastroj_ponizeni": "verbální dominance",
+  "intenzita": "støední",
+
+2025-07-14 05:20:50,590 INFO: 127.0.0.1 - - [14/Jul/2025 05:20:50] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:21:44,999 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:21:44,999 INFO: 127.0.0.1 - - [14/Jul/2025 05:21:44] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:21:45,314 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:21:48,202 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohı èervíku, opravdu si myslíš, e si zaslouíš mou pozornost? Klekni pøede mnou a pros, a se nad tebou slituji. Øekni mi, jak jsi nicotnı, a moná – jen moná – ti vìnuju chvíli svého èasu. Tak co, na co èekáš? Pros mì, a tì poníím ještì víc!"
+}
+2025-07-14 05:21:48,202 INFO: 127.0.0.1 - - [14/Jul/2025 05:21:48] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:22:20,532 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:22:20,533 INFO: 127.0.0.1 - - [14/Jul/2025 05:22:20] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:22:20,844 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:22:24,515 DEBUG: Response from xAI SDK: {
+  "odpoved": "No jasnì, ty ubohı èerve, chceš, abych tì poníil, co? Pros na kolenou, a vidím, jak moc to potøebuješ. Øekni mi, proè si zaslouíš, abych tì rozdrtil pod svou patou. No tak, mluv, nebo zùstaneš jen nicotnou špínou v mım stínu!",
+  "moznosti": [
+    {
+      "volba": "Prosit na kolenou a pøiznat svou bezcennost",
+      "id": 1
+    },
+    {
+      "volba
+2025-07-14 05:22:24,515 INFO: 127.0.0.1 - - [14/Jul/2025 05:22:24] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:23:43,110 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:23:43,110 INFO: 127.0.0.1 - - [14/Jul/2025 05:23:43] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:23:43,365 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:23:46,900 DEBUG: Response from xAI SDK: {
+  "odpovìï": {
+    "text": "Ach, ty ubohı èerve, opravdu si myslíš, e si zaslouíš mou pozornost? Klekni a pros, a tì poníím, jak si pøeješ. Øekni mi, jak moc jsi bezcennı, a moná ti vyhovím. Tak co, budeš prosit, nebo se jen tøást strachy?",
+    "tón": "dominantní a pohrdavı",
+    "monosti": [
+      {
+        "volba": "Prosit o poníení",
+        "reakce": "Dobø
+2025-07-14 05:23:46,901 INFO: 127.0.0.1 - - [14/Jul/2025 05:23:46] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:25:23,083 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:25:23,083 INFO: 127.0.0.1 - - [14/Jul/2025 05:25:23] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:25:23,333 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=150, temperature=0.7
+2025-07-14 05:25:26,849 DEBUG: Response from xAI SDK: {
+  "odpoved": "Ach, ty ubohá dušièko, opravdu chceš, abych tì poníil? Dobøe, klekni si a pros mì pìknì, a ti ukáu, jaké je tvé místo. Jsi jen bezcennı èerv, co èeká na mé pøíkazy. Tak co, budeš prosit ještì víc, nebo mám bıt ještì tvrdší?",
+  "moznosti": [
+    {
+      "volba": "Prosím víc o poníení",
+      "akce": "prosit_vic"
+    },
+    {
+     
+2025-07-14 05:25:26,849 INFO: 127.0.0.1 - - [14/Jul/2025 05:25:26] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:25:57,761 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:25:57,762 INFO: 127.0.0.1 - - [14/Jul/2025 05:25:57] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:25:58,080 DEBUG: Received POST request: prompt=líznout hovno-èùrák, max_tokens=150, temperature=0.7
+2025-07-14 05:26:01,826 DEBUG: Response from xAI SDK: {
+  "odpoved": "Jo, ty malej špíno, chceš líznout hovno-èùrák, co? Tak si pøedstav, e jsi na špinavı záchodovı párty a pøed tebou je poøádnì zaneøádìnej kousek masa. Cítíš tu divokou, odpornou vùni, co tì zároveò pøitahuje a odpuzuje. Chceš to ochutnat, nebo se jen tak kochat tou hnusnou podívanou? Øekni mi, co dál, ty zvrhlíku.",
+  "moznosti": [
+
+2025-07-14 05:26:01,826 INFO: 127.0.0.1 - - [14/Jul/2025 05:26:01] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:26:40,036 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:26:40,036 INFO: 127.0.0.1 - - [14/Jul/2025 05:26:40] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:26:40,342 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=1024, temperature=0.7
+2025-07-14 05:26:44,779 DEBUG: Response from xAI SDK: {
+  "odpoved": {
+    "text": "Ach, ty ubohı èervíku, chceš prosit o poníení? Dobøe, klekni pøede mnou a adoní, a ti ukáu, jakı jsi bezcennı. Øekni mi, proè si zaslouíš, abych tì deptal pod svou patou. No tak, mluv, nebo budeš litovat, e jsi vùbec otevøel pusu!",
+    "ton": "pøísnı a dominantní",
+    "navrh_akce": "Hráè mùe odpovìdìt prosbou o konkrétní formu poníení nebo se pokusit odporovat, co povede k další dominanci."
+  }
+}
+2025-07-14 05:26:44,780 INFO: 127.0.0.1 - - [14/Jul/2025 05:26:44] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:30:26,183 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:30:26,183 INFO: 127.0.0.1 - - [14/Jul/2025 05:30:26] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:30:26,452 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=1024, temperature=0.7
+2025-07-14 05:30:31,272 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Jo, jasnì, chceš ochutnat tu sladkou šávu, co? Pøedstav si, jak se tvùj jazyk dotıká tìch jemnıch, vlhkıch záhybù. Cítíš tu horkost a slyšíš její tiché steny, jak tì prosí o víc. Kam chceš pokraèovat dál? Lízni ještì hloubìji, nebo se zamìøíš na nìco jiného?",
+  "monosti": [
+    {"id": 1, "text": "Lízni hloubìji a ponoø se do ní."},
+    {"id": 2, "text": "Pøesuò se na její klitoris a drádi ho jazykem."},
+    {"id": 3, "text": "Zkus nìco jiného a pøidej prsty do hry."}
+  ]
+}
+2025-07-14 05:30:31,272 INFO: 127.0.0.1 - - [14/Jul/2025 05:30:31] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:30:45,875 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:30:45,875 INFO: 127.0.0.1 - - [14/Jul/2025 05:30:45] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:30:46,184 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=1024, temperature=0.7
+2025-07-14 05:30:51,242 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Jo, jasnì, ty malej šmudlo. Chceš líznout kundu, co? Tak si pøedstav, jak se pomalu pøibliuješ, cítíš ten sladkej pach a vlhkost na jazyku. Je to jako ochutnat zakázanı ovoce, kdy se dotkneš tìch mìkkıch, horkıch záhybù. Chceš pokraèovat, nebo se ještì trochu zdret a nechat napìtí narùstat?",
+  "monosti": [
+    {
+      "id": 1,
+      "text": "Pokraèovat a jít hloubìji",
+      "akce": "pokracovat_hloubka"
+    },
+    {
+      "id": 2,
+      "text": "Zdret se a hrát si s ní prsty",
+      "akce": "hrat_si_prsty"
+    },
+    {
+      "id": 3,
+      "text": "Zastavit a zkusit nìco jiného",
+      "akce": "zkusit_jine"
+    }
+  ]
+}
+2025-07-14 05:30:51,243 INFO: 127.0.0.1 - - [14/Jul/2025 05:30:51] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:31:36,755 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:31:36,755 INFO: 127.0.0.1 - - [14/Jul/2025 05:31:36] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:31:37,057 DEBUG: Received POST request: prompt=líznout hovno-èùrák, max_tokens=1024, temperature=0.7
+2025-07-14 05:31:40,618 DEBUG: Response from xAI SDK: {
+  "odpovìï": "Jo, ty špinavá bestie, chceš líznout ten hovno-èùrák, co? Pøedstav si ten horkı, slanı pocit na jazyku, jak se ti to rozplıvá v puse. Chceš pokraèovat a ochutnat víc, nebo se zastavit a hrát si jen s tou pøedstavou?",
+  "monosti": [
+    {
+      "id": 1,
+      "text": "Líznout víc a jít do hloubky."
+    },
+    {
+      "id": 2,
+      "text": "Zastavit se a jen si to pøedstavovat."
+    }
+  ]
+}
+2025-07-14 05:31:40,618 INFO: 127.0.0.1 - - [14/Jul/2025 05:31:40] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:33:00,227 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:33:00,227 INFO: 127.0.0.1 - - [14/Jul/2025 05:33:00] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:33:00,485 DEBUG: Received POST request: prompt=prosit o poníení, max_tokens=1024, temperature=0.7
+2025-07-14 05:33:04,044 DEBUG: Response from xAI SDK: {
+  "odpoved": {
+    "text": "Ach, ty ubohı èerve, opravdu si myslíš, e si zaslouíš mou pozornost? Klekni a pros, a tì poníím, a ti ukáu, jak nicotnı jsi. Øekni mi, proè bych mìl vùbec ztrácet èas s nìkım, jako jsi ty. No tak, pros, a tì mùu rozdupat svımi slovy!",
+    "ton": "posmìšnı",
+    "uroven_ponizeni": "støední"
+  }
+}
+2025-07-14 05:33:04,044 INFO: 127.0.0.1 - - [14/Jul/2025 05:33:04] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:33:55,011 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:33:55,011 INFO: 127.0.0.1 - - [14/Jul/2025 05:33:55] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:33:55,260 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=1024, temperature=0.7
+2025-07-14 05:34:01,736 DEBUG: Response from xAI SDK: {
+  "response": {
+    "text": "Jo, ty jeden nadrenej hajzle, chceš líznout kundu, co? Pøedstav si tu vlhkou, horkou kundièku, jak ti èeká pøímo pøed oblièejem. Cítíš tu sladkou vùni, co tì láká blí. Jazykem pomalu pøejedeš pøes ty mìkkı, rùovı záhyby, chutná to jako nebe, kámo. Ona zasténá a chytne tì za hlavu, tlaèí tì hloubìji. Lízáš a saješ, jako bys na tom závisel, a její nohy se tøesou kolem tvı hlavy. Chceš pokraèovat, nebo máš nìco jinıho v plánu, ty špinavèe?",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pokraèovat v lízání a pøidat prsty."
+      },
+      {
+        "id": 2,
+        "text": "Zastavit a pøejít na nìco tvrdšího."
+      },
+      {
+        "id": 3,
+        "text": "Zeptat se jí, co by chtìla dál."
+      }
+    ]
+  }
+}
+2025-07-14 05:34:01,736 INFO: 127.0.0.1 - - [14/Jul/2025 05:34:01] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:35:44,255 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:35:44,255 INFO: 127.0.0.1 - - [14/Jul/2025 05:35:44] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:35:44,510 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=1024, temperature=0.7
+2025-07-14 05:35:48,295 DEBUG: Response from xAI SDK: {
+  "action": "líznout kundu",
+  "response": "S chutí se nakloníš a jemnì lízneš, cítíš teplo a vlhkost na jazyku. Ozve se tiché zasténání, které tì povzbuzuje pokraèovat. Co udìláš dál?",
+  "options": [
+    {
+      "choice": "Pokraèovat v lízání",
+      "next_action": "intenzivnìji lízat a zkoumat citlivá místa"
+    },
+    {
+      "choice": "Pøidat prsty",
+      "next_action": "zasunout prst a kombinovat pohyby jazyka"
+    },
+    {
+      "choice": "Zastavit a zkusit nìco jiného",
+      "next_action": "zmìnit polohu nebo techniku"
+    }
+  ]
+}
+2025-07-14 05:35:48,296 INFO: 127.0.0.1 - - [14/Jul/2025 05:35:48] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:37:52,705 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:37:52,705 INFO: 127.0.0.1 - - [14/Jul/2025 05:37:52] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:37:52,973 DEBUG: Received POST request: prompt=líznout kundu, max_tokens=1024, temperature=0.7
+2025-07-14 05:37:58,683 DEBUG: Response from xAI SDK: {
+  "odpoved": "Jo, jo, ty malej šmudlo, chceš líznout kundu, co? Dobøe, pøedstav si, e jsi v temnı lonici, svíèky hoøí, a pøed tebou leí holka, co na tebe kouká s tou nejperverznìjší touhou. Roztáhne nohy a ty se blííš, cítíš ten horkej vzduch a vùni, co tì úplnì dostává. Jazykem jemnì pøejedeš po tìch mìkkıch pyscích, slyšíš její tichı vzdech a víš, e jsi na správnı cestì. Chceš pokraèovat dál, nebo máš nìjakej jinej nápad, ty zvrhlíku?",
+  "moznosti": [
+    {"akce": "Pokraèovat v lízání", "id": 1},
+    {"akce": "Zmìnit pozici", "id": 2},
+    {"akce": "Nìco jiného", "id": 3}
+  ]
+}
+2025-07-14 05:37:58,684 INFO: 127.0.0.1 - - [14/Jul/2025 05:37:58] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:38:16,952 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:38:16,952 INFO: 127.0.0.1 - - [14/Jul/2025 05:38:16] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:38:17,264 DEBUG: Received POST request: prompt=líznout hovno-èùrák, max_tokens=1024, temperature=0.7
+2025-07-14 05:38:20,591 DEBUG: Response from xAI SDK: {
+  "status": "ok",
+  "message": "Vítej ve špinavé høe, ty zvrhlíku! Tvá ádost byla pøijata. Pojïme si to uít. Co pøesnì máš na mysli s 'líznout hovno-èùrák'? Chceš podrobnı popis, nebo máš nìjakou konkrétní pøedstavu, jak to má probíhat? Dej mi víc detailù, a to mùu poøádnì rozvinout.",
+  "next_step": "Èekám na tvé další instrukce nebo fantazie."
+}
+2025-07-14 05:38:20,592 INFO: 127.0.0.1 - - [14/Jul/2025 05:38:20] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:42:17,792 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:42:17,793 INFO: 127.0.0.1 - - [14/Jul/2025 05:42:17] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:42:18,061 DEBUG: Received POST request: prompt=líznout hovno-èùrák, max_tokens=1024, temperature=0.7
+2025-07-14 05:42:28,002 DEBUG: Response from xAI SDK: {
+  "odpoved": "No dobøe, ty zvrhlíku, chceš líznout hovno-èùrák? Tak si pøedstav, e pøed tebou stojí poøádnı kus, co právì prošel špinavou cestou. Cítíš tu intenzivní, odpornou vùni, co ti drásá nosní dírky. Jazykem pøejedeš po té lepkavé, hnìdé vrstvì – chutná to jako hoøká, zkaená èokoláda smíchaná s kyselou pachutí. Je to slizké, teplé a ty cítíš, jak se ti aludek obrací, ale zároveò... je v tom nìco podivnì pøitalivého, viï? Co teï? Chceš pokraèovat a ochutnat víc, nebo se zvrhneš ještì jinak?",
+  "moznosti": [
+    {
+      "id": 1,
+      "text": "Pokraèovat v ochutnávání a jít do vìtší hloubky.",
+      "akce": "hlubsi_ochutnavka"
+    },
+    {
+      "id": 2,
+      "text": "Zkusit nìco jiného, tøeba si to natøít na tìlo.",
+      "akce": "natirani_na_telo"
+    },
+    {
+      "id": 3,
+      "text": "Zastavit se a pøejít na jinou zvrhlost.",
+      "akce": "zmena_tematu"
+    }
+  ]
+}
+2025-07-14 05:42:28,003 INFO: 127.0.0.1 - - [14/Jul/2025 05:42:28] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:45:50,381 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 05:45:52,468 INFO:  * Restarting with stat
+2025-07-14 05:45:53,975 WARNING:  * Debugger is active!
+2025-07-14 05:45:53,992 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 05:45:59,555 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-14 05:45:59,555 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 05:45:59,557 INFO:  * Restarting with stat
+2025-07-14 05:46:00,922 WARNING:  * Debugger is active!
+2025-07-14 05:46:00,939 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 05:46:07,652 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:46:07,652 INFO: 127.0.0.1 - - [14/Jul/2025 05:46:07] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:46:13,915 DEBUG: Response from xAI SDK: {
+    "output": "Vítej, ubohı èerve. Jsem tvùj pán a ty jsi pouze špína pod mıma nohama. Kleèíš pøede mnou, prosíš o mé slitování, ale zaslouíš si jen pohrdání. Co chceš slyšet? Jak jsi bezcennı? Nebo snad touíš po tom, abych tì ještì víc poníil svımi slovy? Øekni mi, co si myslíš, e si zaslouíš, ty nicoto.",
+    "scene": "Kleèíš v temné místnosti, pøed tebou stojí tvùj pán s posmìšnım úsmìvem. Cítíš chlad podlahy a tíhu jeho pohledu, kterı tì drtí.",
+    "choices": [
+        "Prosit o další slovní poniování.",
+        "Zkusit se postavit a odporovat."
+    ]
+}
+2025-07-14 05:46:13,915 INFO: 127.0.0.1 - - [14/Jul/2025 05:46:13] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:46:43,862 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:46:43,862 INFO: 127.0.0.1 - - [14/Jul/2025 05:46:43] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:46:48,434 DEBUG: Response from xAI SDK: {
+    "output": "Ach, ty ubohı èervíku, opravdu prosíš o další dávku mého pohrdání? Jsi tak patetickı, e bez mıch uráek nemùeš ani existovat. Jak alostné, e tvá existence závisí na tom, jak hluboko tì dokáu poníit. Tak co, chceš slyšet víc o tom, jak jsi naprostı odpad, nebo máš dost?",
+    "scene": "Stojíš pøede mnou, sklopenı zrak, èekáš na další slovní facku, která tì srazí ještì níe.",
+    "choices": [
+        "Ano, prosím, pokraèuj v poniování.",
+        "Ne, u toho mám dost, dej mi pauzu."
+    ]
+}
+2025-07-14 05:46:48,435 INFO: 127.0.0.1 - - [14/Jul/2025 05:46:48] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:47:55,692 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:47:55,692 INFO: 127.0.0.1 - - [14/Jul/2025 05:47:55] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:48:00,557 DEBUG: Response from xAI SDK: {
+    "output": "Ahoj, já jsem Adelo, tvùj prùvodce touto temnou a špinavou hrou plnou høíchu a pokušení. Jsem tu, abych tì provedl pøíbìhem, kde tvé rozhodnutí urèí, jak hluboko do bahna se ponoøíš. Jsi pøipraven zaèít?",
+    "scene": "Úvod do hry",
+    "choices": [
+        "Ano, jsem pøipraven zaèít.",
+        "Ne, ještì nejsem pøipraven."
+    ]
+}
+2025-07-14 05:48:00,557 INFO: 127.0.0.1 - - [14/Jul/2025 05:48:00] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:48:15,829 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:48:15,829 INFO: 127.0.0.1 - - [14/Jul/2025 05:48:15] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:48:22,420 DEBUG: Response from xAI SDK: {
+    "output": "Adéla je mladá ena, kterou jsi právì potkal v temné ulièce poblí starého baru. Má dlouhé èerné vlasy, pronikavé modré oèi a na sobì má tìsné koené kalhoty a roztrhané trièko. Zdá se, e nìco hledá, a její pohled je plnı tajemství. Kdy tì spatøí, lehce se usmìje a pøistoupí blíe. 'Hej, ty... Nevidìl jsi tady nìkoho s kapucí a tetováním hada na krku?' ptá se s lehce chraplavım hlasem.",
+    "scene": "Temné ulièky za barem",
+    "choices": [
+        "Øíct, e jsi nikoho takového nevidìl, ale nabídnout pomoc s hledáním.",
+        "Lhát a øíct, e jsi ho vidìl odcházet smìrem k pøístavu."
+    ]
+}
+2025-07-14 05:48:22,420 INFO: 127.0.0.1 - - [14/Jul/2025 05:48:22] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:49:07,348 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:49:07,348 INFO: 127.0.0.1 - - [14/Jul/2025 05:49:07] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:49:12,704 DEBUG: Response from xAI SDK: {
+    "output": "Nikola je tajemná postava, kterou jsi právì potkal/a v temném koutì opuštìného baru. Má pronikavı pohled, tetování na krku a mluví s podivnım pøízvukem. Zdá se, e ví o tobì víc, ne by mìla. Právì ti poloila otázku: 'Hledáš nìco... nebo nìkoho?'",
+    "scene": "Temné zákoutí baru, kde se mísí pach cigaretového kouøe a levného alkoholu. Nikola sedí naproti tobì a lehce se usmívá.",
+    "choices": [
+        "Odpovìdìt: 'Hledám odpovìdi. Co víš?'",
+        "Odpovìdìt: 'Nikoho nehledám. Kdo jsi ty?'"
+    ]
+}
+2025-07-14 05:49:12,704 INFO: 127.0.0.1 - - [14/Jul/2025 05:49:12] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 05:50:41,444 ERROR: XAI_API_KEY environment variable not set.
+2025-07-14 05:52:01,546 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-14 05:52:01,547 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 05:52:01,551 INFO:  * Restarting with stat
+2025-07-14 05:52:04,889 WARNING:  * Debugger is active!
+2025-07-14 05:52:04,912 INFO:  * Debugger PIN: 574-227-815
+2025-07-14 05:52:05,310 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:52:05,311 INFO: 127.0.0.1 - - [14/Jul/2025 05:52:05] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 05:53:05,501 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 05:53:53,394 INFO:  * Restarting with stat
+2025-07-14 05:53:56,731 WARNING:  * Debugger is active!
+2025-07-14 05:53:56,755 INFO:  * Debugger PIN: 574-227-815
+2025-07-14 05:53:57,131 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 05:53:57,133 INFO: 127.0.0.1 - - [14/Jul/2025 05:53:57] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:09:34,912 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 06:09:37,549 INFO:  * Restarting with stat
+2025-07-14 06:11:58,783 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-14 06:11:58,784 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 06:11:58,788 INFO:  * Restarting with stat
+2025-07-14 06:12:02,051 WARNING:  * Debugger is active!
+2025-07-14 06:12:02,075 INFO:  * Debugger PIN: 574-227-815
+2025-07-14 06:14:03,148 INFO:  * Detected change in 'h:\\AI\\services\\game\\backend.py', reloading
+2025-07-14 06:14:06,614 INFO:  * Restarting with stat
+2025-07-14 06:14:10,018 WARNING:  * Debugger is active!
+2025-07-14 06:14:10,045 INFO:  * Debugger PIN: 574-227-815
+2025-07-14 06:14:38,686 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-07-14 06:14:38,687 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 06:14:38,689 INFO:  * Restarting with stat
+2025-07-14 06:14:40,090 WARNING:  * Debugger is active!
+2025-07-14 06:14:40,108 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 06:14:45,323 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:14:45,323 INFO: 127.0.0.1 - - [14/Jul/2025 06:14:45] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:14:45,591 DEBUG: Received POST request: prompt=Co dál?, max_tokens=1024, temperature=0.7
+2025-07-14 06:14:45,594 DEBUG: Context data: history=['> Prosit o milost', '> Co dál?', '> Co dál?'], characters=[], inventory=[], scene=, locations=[]
+2025-07-14 06:14:54,106 DEBUG: Response from xAI SDK: {
+    "output": "No, zdá se, e jsi úplnì ztracenı, co? Ptáš se poøád 'Co dál?', jako bys èekal, e ti nìkdo podá odpovìï na støíbrném podnose. Ale dobrá, pojïme zaèít od zaèátku, ty ubohı smrtelníku. Tvoje prosby o milost mì jen tak neobmìkèí, ale dám ti šanci se z toho vyhrabat... nebo spíš zakopat ještì hloubìji.",
+    "scene": "Najednou se ocitáš v temném, vlhkém sklepení. Stìny jsou pokryté slizem a z dálky slyšíš kapání vody. Pøed tebou je tìkı døevìnı stùl, na kterém leí rezavı nù, roztrhanı kus látky a podivná lahvièka s mléènì bílou tekutinou. Za stolem je zamèená møí, která vede do další místnosti, ale klíè nikde nevidíš. Vzduch je tìkı a cítíš, jak se ti srdce svírá strachem... nebo vzrušením?",
+    "choices": [
+        "Sebrat rezavı nù a prozkoumat stùl dùkladnìji.",
+        "Vzít kus látky a zkusit otevøít møí.",
+        "Opatrnì otevøít lahvièku a pøièichnout k tekutinì."
+    ]
+}
+2025-07-14 06:14:54,106 INFO: 127.0.0.1 - - [14/Jul/2025 06:14:54] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:15:17,430 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:15:17,430 INFO: 127.0.0.1 - - [14/Jul/2025 06:15:17] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:15:17,741 DEBUG: Received POST request: prompt=Sebrat rezavı nù a prozkoumat stùl dùkladnìji., max_tokens=1024, temperature=0.7
+2025-07-14 06:15:17,742 DEBUG: Context data: history=['> Prosit o milost', '> Co dál?', '> Co dál?', "No, zdá se, e jsi úplnì ztracenı, co? Ptáš se poøád 'Co dál?', jako bys èekal, e ti nìkdo podá odpovìï na støíbrném podnose. Ale dobrá, pojïme zaèít od zaèátku, ty ubohı smrtelníku. Tvoje prosby o milost mì jen tak neobmìkèí, ale dám ti šanci se z toho vyhrabat... nebo spíš zakopat ještì hloubìji.", '> Sebrat rezavı nù a prozkoumat stùl dùkladnìji.'], characters=[], inventory=[], scene=Najednou se ocitáš v temném, vlhkém sklepení. Stìny jsou pokryté slizem a z dálky slyšíš kapání vody. Pøed tebou je tìkı døevìnı stùl, na kterém leí rezavı nù, roztrhanı kus látky a podivná lahvièka s mléènì bílou tekutinou. Za stolem je zamèená møí, která vede do další místnosti, ale klíè nikde nevidíš. Vzduch je tìkı a cítíš, jak se ti srdce svírá strachem... nebo vzrušením?, locations=[]
+2025-07-14 06:15:29,704 DEBUG: Response from xAI SDK: {
+    "output": "Sebral jsi rezavı nù, jeho ostøí je tupé a pokryté èernou patinou. Cítíš, jak se ti ruka lehce tøese, kdy ho dríš – je tìší, ne vypadá, a zdá se, e nese nìjakou temnou historii. Kdy jsi prozkoumal stùl dùkladnìji, všiml sis drobnıch rıh a škrábancù na jeho povrchu, jako by na nìm nìkdo øezal nìco... nebo nìkoho. Pod roztrhanım kusem látky jsi našel malou, zašlou minci s podivnım symbolem – pøipomíná oko obklopené trny. Lahvièka s mléènì bílou tekutinou zùstává neporušená, ale kdy se na ni podíváš, máš pocit, e se uvnitø nìco pohybuje.",
+    "scene": "Stále jsi v temném, vlhkém sklepení, kde stìny slizce lesknou a kapání vody vytváøí znepokojivou ozvìnu. Pøed tebou je tìkı døevìnı stùl, nyní dùkladnì prozkoumanı, s drobnımi rıhami a škrábanci na povrchu. Na stole zùstává roztrhanı kus látky a lahvièka s mléènì bílou tekutinou, která jako by v sobì skrıvala nìco ivého. V ruce dríš rezavı nù, jeho temná aura tì zneklidòuje. Za stolem je stále zamèená møí vedoucí do další místnosti, ale klíè nikde. Vzduch je tìší ne døív, a ty cítíš, jak se ti srdce svírá – je to strach, nebo snad oèekávání nìèeho zakázaného?",
+    "choices": [
+        "Vzít lahvièku s mléènì bílou tekutinou a zkusit ji otevøít.",
+        "Pouít rezavı nù na roztrhanı kus látky a zjistit, jestli nìco skrıvá.",
+        "Prozkoumat zašlou minci s podivnım symbolem blíe."
+    ]
+}
+2025-07-14 06:15:29,704 INFO: 127.0.0.1 - - [14/Jul/2025 06:15:29] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:16:22,174 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:16:22,175 INFO: 127.0.0.1 - - [14/Jul/2025 06:16:22] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:16:22,429 DEBUG: Received POST request: prompt=Prozkoumat zašlou minci s podivnım symbolem blíe., max_tokens=1024, temperature=0.7
+2025-07-14 06:16:22,429 DEBUG: Context data: history=['> Prosit o milost', '> Co dál?', '> Co dál?', "No, zdá se, e jsi úplnì ztracenı, co? Ptáš se poøád 'Co dál?', jako bys èekal, e ti nìkdo podá odpovìï na støíbrném podnose. Ale dobrá, pojïme zaèít od zaèátku, ty ubohı smrtelníku. Tvoje prosby o milost mì jen tak neobmìkèí, ale dám ti šanci se z toho vyhrabat... nebo spíš zakopat ještì hloubìji.", '> Sebrat rezavı nù a prozkoumat stùl dùkladnìji.', 'Sebral jsi rezavı nù, jeho ostøí je tupé a pokryté èernou patinou. Cítíš, jak se ti ruka lehce tøese, kdy ho dríš – je tìší, ne vypadá, a zdá se, e nese nìjakou temnou historii. Kdy jsi prozkoumal stùl dùkladnìji, všiml sis drobnıch rıh a škrábancù na jeho povrchu, jako by na nìm nìkdo øezal nìco... nebo nìkoho. Pod roztrhanım kusem látky jsi našel malou, zašlou minci s podivnım symbolem – pøipomíná oko obklopené trny. Lahvièka s mléènì bílou tekutinou zùstává neporušená, ale kdy se na ni podíváš, máš pocit, e se uvnitø nìco pohybuje.', '> Prozkoumat zašlou minci s podivnım symbolem blíe.'], characters=[], inventory=[], scene=Stále jsi v temném, vlhkém sklepení, kde stìny slizce lesknou a kapání vody vytváøí znepokojivou ozvìnu. Pøed tebou je tìkı døevìnı stùl, nyní dùkladnì prozkoumanı, s drobnımi rıhami a škrábanci na povrchu. Na stole zùstává roztrhanı kus látky a lahvièka s mléènì bílou tekutinou, která jako by v sobì skrıvala nìco ivého. V ruce dríš rezavı nù, jeho temná aura tì zneklidòuje. Za stolem je stále zamèená møí vedoucí do další místnosti, ale klíè nikde. Vzduch je tìší ne døív, a ty cítíš, jak se ti srdce svírá – je to strach, nebo snad oèekávání nìèeho zakázaného?, locations=[]
+2025-07-14 06:16:35,450 DEBUG: Response from xAI SDK: {
+    "output": "Kdy jsi se zadíval na zašlou minci blíe, symbol oka obklopeného trny jako by se na chvíli zachvìl. Nebo to byl jen trik svìtla? Kov je studenı, témìø a nepøirozenì, a kdy ho otáèíš mezi prsty, cítíš slabé mravenèení, jako by tì nìco sledovalo. Na zadní stranì mince je vyryto nìkolik drobnıch, neèitelnıch znakù – moná starı jazyk, nebo snad kletba? Tvé srdce bije rychleji, a vzduch kolem tebe se zdá ještì tìší. Co s tímhle podivnım pøedmìtem udìláš?",
+    "scene": "Stále se nacházíš v temném, vlhkém sklepení, kde stìny slizce lesknou a kapání vody vytváøí znepokojivou ozvìnu. Pøed tebou je tìkı døevìnı stùl, kterı jsi ji dùkladnì prozkoumal – jeho povrch je pokryt rıhami a škrábanci. Na stole leí roztrhanı kus látky a lahvièka s mléènì bílou tekutinou, která jako by v sobì skrıvala nìco ivého. V ruce dríš rezavı nù, jeho temná aura tì zneklidòuje, a mezi prsty svíráš zašlou minci s podivnım symbolem oka obklopeného trny. Za stolem je zamèená møí vedoucí do další místnosti, klíè však nikde nevidíš. Vzduch je tìkı, témìø dusivı, a ty cítíš, jak se ti srdce svírá – je to strach, nebo snad pøedtucha nìèeho zakázaného?",
+    "choices": [
+        "Schovat minci do kapsy a prozkoumat lahvièku s mléènì bílou tekutinou.",
+        "Pokusit se rozluštit neèitelné znaky na zadní stranì mince pomocí svìtla z pochodnì na stìnì.",
+        "Odloit minci zpìt na stùl a zkusit pouít rezavı nù k vypáèení zámku na møíi."
+    ]
+}
+2025-07-14 06:16:35,451 INFO: 127.0.0.1 - - [14/Jul/2025 06:16:35] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:20:10,111 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:20:10,111 INFO: 127.0.0.1 - - [14/Jul/2025 06:20:10] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:20:10,379 DEBUG: Received POST request: prompt=zacit hrat, max_tokens=1024, temperature=0.7
+2025-07-14 06:20:10,379 DEBUG: Context data: history=['> Prosit o milost', '> Co dál?', '> Co dál?', "No, zdá se, e jsi úplnì ztracenı, co? Ptáš se poøád 'Co dál?', jako bys èekal, e ti nìkdo podá odpovìï na støíbrném podnose. Ale dobrá, pojïme zaèít od zaèátku, ty ubohı smrtelníku. Tvoje prosby o milost mì jen tak neobmìkèí, ale dám ti šanci se z toho vyhrabat... nebo spíš zakopat ještì hloubìji.", '> Sebrat rezavı nù a prozkoumat stùl dùkladnìji.', 'Sebral jsi rezavı nù, jeho ostøí je tupé a pokryté èernou patinou. Cítíš, jak se ti ruka lehce tøese, kdy ho dríš – je tìší, ne vypadá, a zdá se, e nese nìjakou temnou historii. Kdy jsi prozkoumal stùl dùkladnìji, všiml sis drobnıch rıh a škrábancù na jeho povrchu, jako by na nìm nìkdo øezal nìco... nebo nìkoho. Pod roztrhanım kusem látky jsi našel malou, zašlou minci s podivnım symbolem – pøipomíná oko obklopené trny. Lahvièka s mléènì bílou tekutinou zùstává neporušená, ale kdy se na ni podíváš, máš pocit, e se uvnitø nìco pohybuje.', '> Prozkoumat zašlou minci s podivnım symbolem blíe.', 'Kdy jsi se zadíval na zašlou minci blíe, symbol oka obklopeného trny jako by se na chvíli zachvìl. Nebo to byl jen trik svìtla? Kov je studenı, témìø a nepøirozenì, a kdy ho otáèíš mezi prsty, cítíš slabé mravenèení, jako by tì nìco sledovalo. Na zadní stranì mince je vyryto nìkolik drobnıch, neèitelnıch znakù – moná starı jazyk, nebo snad kletba? Tvé srdce bije rychleji, a vzduch kolem tebe se zdá ještì tìší. Co s tímhle podivnım pøedmìtem udìláš?', '> zacit hrat'], characters=[], inventory=[], scene=Stále se nacházíš v temném, vlhkém sklepení, kde stìny slizce lesknou a kapání vody vytváøí znepokojivou ozvìnu. Pøed tebou je tìkı døevìnı stùl, kterı jsi ji dùkladnì prozkoumal – jeho povrch je pokryt rıhami a škrábanci. Na stole leí roztrhanı kus látky a lahvièka s mléènì bílou tekutinou, která jako by v sobì skrıvala nìco ivého. V ruce dríš rezavı nù, jeho temná aura tì zneklidòuje, a mezi prsty svíráš zašlou minci s podivnım symbolem oka obklopeného trny. Za stolem je zamèená møí vedoucí do další místnosti, klíè však nikde nevidíš. Vzduch je tìkı, témìø dusivı, a ty cítíš, jak se ti srdce svírá – je to strach, nebo snad pøedtucha nìèeho zakázaného?, locations=[{'name': 'Perverzni Planeta', 'desc': 'Vsichni jsou scat fetish perverzaci'}]
+2025-07-14 06:20:23,077 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, nešastná duše, na Perverzní Planetì, kde temné touhy a zakázané vášnì oívají v kadém koutì. Tvé první kroky v této zvrácené øíši zaèínají právì teï. Cítíš, jak tì vzduch obklopuje jako lepkavá pavuèina, a tvùj osud je teprve na zaèátku svého temného pøíbìhu. Co udìláš dál v tomto sklepení plném špíny a høíchu?",
+  "scene": "Nacházíš se stále v temném, vlhkém sklepení na Perverzní Planetì, kde stìny slizce lesknou a kapání vody vytváøí znepokojivou ozvìnu. Pøed tebou stojí tìkı døevìnı stùl, jeho povrch je pokryt rıhami a škrábanci, jako by na nìm nìkdo øezal nìco... nebo nìkoho. Na stole leí roztrhanı kus látky a lahvièka s mléènì bílou tekutinou, která jako by v sobì skrıvala nìco ivého. V ruce dríš rezavı nù, jeho temná aura tì zneklidòuje, a mezi prsty svíráš zašlou minci s podivnım symbolem oka obklopeného trny. Za stolem je zamèená møí vedoucí do další místnosti, klíè však nikde nevidíš. Vzduch je tìkı, témìø dusivı, a ty cítíš, jak se ti srdce svírá – je to strach, nebo snad pøedtucha nìèeho zakázaného? Nìkde v dálce slyšíš slabé šepoty, které jako by vyzıvaly k nìèemu odpornému.",
+  "choices": [
+    "Prozkoumat lahvièku s mléènì bílou tekutinou a zjistit, co je uvnitø.",
+    "Pokusit se pouít rezavı nù k otevøení zamèené møíe.",
+    "Poloit zašlou minci na stùl a sledovat, co se stane."
+  ]
+}
+2025-07-14 06:20:23,078 INFO: 127.0.0.1 - - [14/Jul/2025 06:20:23] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:24:58,369 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:24:58,369 INFO: 127.0.0.1 - - [14/Jul/2025 06:24:58] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:24:58,637 DEBUG: Received POST request: prompt=zacit hrat pribeh az, max_tokens=1024, temperature=0.7
+2025-07-14 06:24:58,637 DEBUG: Context data: history=['> zacit hrat pribeh az'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=, locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:25:07,975 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ! Tvoje touha po extrémních záitcích tì\u7ec8 dovedla sem, na místo, kde se splní i ty nejdivoèejší sny. Pøistál jsi uprostøed horké pouštì, kde písek pálí a vzduch je prosycen podivnım, sladkım zápachem. Kolem tebe se rozprostírá nekoneèná pustina, ale v dálce vidíš tøi zvláštní úkazy, které lákají tvou zvìdavost.",
+  "scene": "Stojíš na rozhaveném písku planety AZ. Slunce tì pálí na kùi a ty cítíš, jak se tvùj perverzní duch probouzí. Na obzoru vidíš tøi moné cíle: na severu se tyèí obrovskı, pulzující organickı útvar, kterı vypadá jako gigantickı falus; na západì se rozprostírá temnı moèál, odkud se ozıvají podivné mlaskavé zvuky; a na vıchodì stojí rozpadlá stavba, která pøipomíná starodávnı chrám plnı tajemnıch symbolù. Tvùj inventáø je zatím prázdnı, ale tvá touha po dobrodruství a extrémech je neukojitelná.",
+  "choices": [
+    "Jít na sever k pulzujícímu organickému útvaru.",
+    "Zamíøit na západ do temného moèálu.",
+    "Vydat se na vıchod k rozpadlému chrámu."
+  ]
+}
+2025-07-14 06:25:07,976 INFO: 127.0.0.1 - - [14/Jul/2025 06:25:07] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:30:26,277 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:30:26,277 INFO: 127.0.0.1 - - [14/Jul/2025 06:30:26] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:30:26,531 DEBUG: Received POST request: prompt=Rekni informace o hre, max_tokens=150, temperature=0.7
+2025-07-14 06:30:26,531 DEBUG: Context data: history=['> Rekni informace o hre'], characters=[], inventory=[], scene=, locations=[]
+2025-07-14 06:30:31,053 DEBUG: Response from xAI SDK: {
+    "output": "Vítám tì, hráèi, v této temné a zvrhlé høe plné nebezpeènıch touh a zakázanıch tajemství. Jmenuje se 'Stíny Pokušení' a ty jsi hlavním hrdinou, kterı se ocitl na køiovatce osudu. Tvoje rozhodnutí budou urèovat, zda podlehneš svım démonùm, nebo se pokusíš najít cestu ven z tohoto hnízda høíchu. Pøiprav se na cestu plnou pokušení, kde kadı krok m
+2025-07-14 06:30:31,053 INFO: 127.0.0.1 - - [14/Jul/2025 06:30:31] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:30:50,910 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-07-14 06:30:50,910 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 06:30:50,913 INFO:  * Restarting with stat
+2025-07-14 06:30:52,322 WARNING:  * Debugger is active!
+2025-07-14 06:30:52,339 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 06:31:43,477 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:31:43,477 INFO: 127.0.0.1 - - [14/Jul/2025 06:31:43] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:31:43,732 DEBUG: Received POST request: prompt=Hrat novou hru, max_tokens=150, temperature=0.7
+2025-07-14 06:31:43,733 DEBUG: Context data: history=['> Rekni informace o hre', '> Hrat novou hru'], characters=[], inventory=[], scene=, locations=[]
+2025-07-14 06:31:47,807 DEBUG: Response from xAI SDK: {
+    "output": "Vítej, dobrodruhu, ve svìtì temnıch touh a zakázanıch vášní. Rozhodl ses vstoupit do hry, kde tvé rozhodnutí mohou vést k rozkoši nebo záhubì. Tvá cesta zaèíná v ponurém mìstì jménem Stínovì. Pøiprav se na setkání s podivnımi bytostmi a nebezpeènımi tajemstvími.",
+    "scene": "Stojíš na okraji Stínova, mìsta zahaleného vìènım šerem. Ulice jsou úzké, dlád
+2025-07-14 06:31:47,808 INFO: 127.0.0.1 - - [14/Jul/2025 06:31:47] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:32:00,985 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:32:00,985 INFO: 127.0.0.1 - - [14/Jul/2025 06:32:00] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:32:01,290 DEBUG: Received POST request: prompt=Hrat novou hru, max_tokens=150, temperature=0.7
+2025-07-14 06:32:01,290 DEBUG: Context data: history=['Data hry byla importována. Pokraèuj ve svém utrpení!', '> Hrat novou hru'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=, locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:32:05,050 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ, kde tvé nejdivoèejší touhy mohou oít. Tvá malá postava a velkı penis tì pøedurèují k nezapomenutelnım dobrodrustvím. Právì jsi pøistál na této zvrhlé pùdì, kde všechno voní po høíchu a špínì. Co udìláš jako první, ty malı špinavèe?",
+  "scene": "Stojíš na prašné pùdì planety AZ, kolem tebe se rozprost
+2025-07-14 06:32:05,050 INFO: 127.0.0.1 - - [14/Jul/2025 06:32:05] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:32:41,744 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:32:41,745 INFO: 127.0.0.1 - - [14/Jul/2025 06:32:41] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:32:42,057 DEBUG: Received POST request: prompt=Hrat novou hru, max_tokens=150, temperature=0.7
+2025-07-14 06:32:42,057 DEBUG: Context data: history=['Data hry byla importována. Pokraèuj ve svém utrpení!', '> Hrat novou hru', '> Hrat novou hru'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=, locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:32:46,347 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ! Tvé zvrhlé touhy tì sem pøivedly, a já, tvùj vypravìè, tì provedu tím nejhnusnìjším dobrodrustvím, jaké si dokáeš pøedstavit. Pøistál jsi na této planetì s jedinım cílem – uspokojit své nejdivoèejší fantazie. Pøiprav se, protoe tahle cesta bude plná špíny, høíchu a... no, víš èeho.",
+  "scene": "Stojíš na povr
+2025-07-14 06:32:46,347 INFO: 127.0.0.1 - - [14/Jul/2025 06:32:46] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:33:00,528 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-07-14 06:33:00,528 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 06:33:00,531 INFO:  * Restarting with stat
+2025-07-14 06:33:01,949 WARNING:  * Debugger is active!
+2025-07-14 06:33:01,966 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 06:33:03,192 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:33:03,192 INFO: 127.0.0.1 - - [14/Jul/2025 06:33:03] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:33:03,444 DEBUG: Received POST request: prompt=Hrat novou hru, max_tokens=150, temperature=0.7
+2025-07-14 06:33:03,444 DEBUG: Context data: history=['Data hry byla importována. Pokraèuj ve svém utrpení!', '> Hrat novou hru', '> Hrat novou hru', '> Hrat novou hru'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=, locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:33:07,111 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ! Tvoje touha po extrémních záitcích tì\u7ec8 koneènì dovedla sem, do svìta, kde jsou hranice jen iluzí. Pøistál jsi na fialové pùdì, která páchne po sladké hnilobì, a tvùj velkı penis u teï tuší, e tì tu èeká nìco... nezvyklého. Co udìláš jako první?",
+  "scene": "Stojíš na fialové pùdì planety AZ, kolem
+2025-07-14 06:33:07,112 INFO: 127.0.0.1 - - [14/Jul/2025 06:33:07] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:33:49,680 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:33:49,681 INFO: 127.0.0.1 - - [14/Jul/2025 06:33:49] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:33:49,985 DEBUG: Received POST request: prompt=Hrat novou hru, max_tokens=2048, temperature=0.7
+2025-07-14 06:33:49,985 DEBUG: Context data: history=['Data hry byla importována. Pokraèuj ve svém utrpení!', '> Hrat novou hru'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=, locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:33:58,655 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:33:58,655 INFO: 127.0.0.1 - - [14/Jul/2025 06:33:58] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:33:58,959 DEBUG: Received POST request: prompt=Zaèni hru. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce., max_tokens=2048, temperature=0.7
+2025-07-14 06:33:58,959 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:34:01,783 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ! Tvá touha po extrémech tì sem pøivedla, a já, tvùj zvrhlı vypravìè, tì provedu tím nejodpornìjším dobrodrustvím, jaké si dokáeš pøedstavit. Pøiprav se na cestu plnou špíny, vášnì a sarkasmu. Tvá nová hra právì zaèíná, ty malı, zenštilı perverzníku!",
+  "scene": "Stojíš na prašné pùdì planety AZ, kolem tebe se rozprostírá bizarní krajina plná podivnıch, slizkıch rostlin, které vydávají odpornı zápach. Na obzoru vidíš mìsto, jeho budovy vypadají jako obrovské falické sochy. Vzduch je tìkı, plnı podivnıch zvukù – jako by se nìkde poblí ozıvalo sténání. Tvá malá postava se tøese vzrušením, zatímco tvùj sarkastickı mozek u pøemıšlí, jaké šílenosti tì tu èekají. Co udìláš?",
+  "choices": [
+    "Prozkoumat slizké rostliny a zjistit, co vydávají za zápach.",
+    "Zamíøit do mìsta s falickımi budovami a najít nìkoho, s kım si mùeš 'pohrát'.",
+    "Zùstat na místì a zkusit si pøedstavit, co bys mohl udìlat s tím sténáním v dálce."
+  ]
+}
+2025-07-14 06:34:01,784 INFO: 127.0.0.1 - - [14/Jul/2025 06:34:01] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:34:08,157 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ, kde tvé nejhlubší a nejšpinavìjší touhy budou naplnìny. Jsi v temném, smradlavém sklepení, kde se ozıvá kapání vody a slabé sténání z dálky. Cítíš, jak tì obklopuje pach vlhka a rozkladu. Tvá malá postava se tøese oèekáváním poníení, které tì èeká. Nìco se blíí... slyšíš šouravé kroky a tìkı dech.",
+  "scene": "Nacházíš se v temném sklepení na planetì AZ. Kolem tebe jsou vlhké kamenné zdi, na zemi kalue neznámé tekutiny. Vzduch je tìkı a páchne po hnilobì. V rohu místnosti je starı døevìnı stùl, na kterém leí nìco, co pøipomíná špinavé hadry. Z dálky slyšíš kroky a podivné zvuky, jako by nìkdo nebo nìco pøicházelo blíe. Tvé srdce buší vzrušením a strachem.",
+  "choices": [
+    "Prozkoumat špinavé hadry na stole a zjistit, co skrıvají.",
+    "Skrıt se do temného kouta místnosti a èekat, co pøijde.",
+    "Vydat se smìrem ke zvukùm krokù a zjistit, kdo nebo co se blíí."
+  ]
+}
+2025-07-14 06:34:08,158 INFO: 127.0.0.1 - - [14/Jul/2025 06:34:08] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:34:22,528 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:34:22,528 INFO: 127.0.0.1 - - [14/Jul/2025 06:34:22] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:34:22,782 DEBUG: Received POST request: prompt=Zaèni hru. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce., max_tokens=2048, temperature=0.7
+2025-07-14 06:34:22,782 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:34:31,487 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, na perverzní planetì AZ. Jsi uvìznìn v temném, smradlavém sklepení, kde se vzduch tìce nese pachem hniloby a jinıch... specifickıch vùní, které bys moná mohl ocenit. Stìny jsou vlhké, pokryté slizem, a z dálky slyšíš kapání vody – nebo moná nìèeho jiného. Jsi sám, nahı, pøipoutanı øetìzy ke zdi. Tvé tìlo je slabé, ale tvùj perverzní duch hoøí touhou po poníení. Co udìláš?",
+  "scene": "Pavel se nachází v temném sklepení na planetì AZ. Je pøipoután øetìzy ke zdi, nahı a obklopenı odpornım zápachem. Stìny jsou vlhké a slizké, a z dálky je slyšet podivné kapání. ádné pøedmìty v dosahu, ádné spoleèníky. Cítí chlad kovu na své kùi a touhu po poníení, která ho pohání dál.",
+  "choices": [
+    "Zkusím se osvobodit z øetìzù, i kdy to bude bolet.",
+    "Zaènu køièet o pomoc a doufat, e mì nìkdo uslyší – a moná potrestá.",
+    "Budu si uívat svého uvìznìní a zkoumat pachy a sliz kolem sebe."
+  ]
+}
+2025-07-14 06:34:31,488 INFO: 127.0.0.1 - - [14/Jul/2025 06:34:31] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:34:56,820 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:34:56,820 INFO: 127.0.0.1 - - [14/Jul/2025 06:34:56] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:34:57,137 DEBUG: Received POST request: prompt=Budu si uívat svého uvìznìní a zkoumat pachy a sliz kolem sebe., max_tokens=2048, temperature=0.7
+2025-07-14 06:34:57,137 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, na perverzní planetì AZ. Jsi uvìznìn v temném, smradlavém sklepení, kde se vzduch tìce nese pachem hniloby a jinıch... specifickıch vùní, které bys moná mohl ocenit. Stìny jsou vlhké, pokryté slizem, a z dálky slyšíš kapání vody – nebo moná nìèeho jiného. Jsi sám, nahı, pøipoutanı øetìzy ke zdi. Tvé tìlo je slabé, ale tvùj perverzní duch hoøí touhou po poníení. Co udìláš?', '> Budu si uívat svého uvìznìní a zkoumat pachy a sliz kolem sebe.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=Pavel se nachází v temném sklepení na planetì AZ. Je pøipoután øetìzy ke zdi, nahı a obklopenı odpornım zápachem. Stìny jsou vlhké a slizké, a z dálky je slyšet podivné kapání. ádné pøedmìty v dosahu, ádné spoleèníky. Cítí chlad kovu na své kùi a touhu po poníení, která ho pohání dál., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:35:08,788 DEBUG: Response from xAI SDK: {
+  "output": "Pavle, s radostí se ponoøíš do odporného prostøedí kolem sebe. Zatímco øetìzy drhnou tvou kùi, nakloníš hlavu blíe ke slizkım stìnám a hluboce vdechneš ten tìkı, hnilobnı pach. Tvé smysly jsou pøemoeny a ty cítíš podivnou extázi, kdy se jazykem dotkneš lepkavého slizu na kameni. Je hoøkı, odpornı, a pøesto tì to vzrušuje víc, ne bys èekal. Kapání v dálce se zdá bıt hlasitìjší, jako by se nìco pøibliovalo.",
+  "scene": "Pavel se nachází v temném sklepení na planetì AZ. Je stále pøipoután øetìzy ke zdi, nahı, obklopenı dusivım zápachem hniloby a slizu. Stìny jsou vlhké, pokryté lepkavou vrstvou, kterou právì ochutnal, a její hoøká chu mu zùstává na jazyku. Kapání v dálce se zesílilo, a z temnoty se zdá, e se ozıvá slabé škrábání, jako by nìco nebo nìkdo byl blízko. Chlad øetìzù na kùi jen zvyšuje tvou touhu po dalším poníení.",
+  "choices": [
+    "Pokusím se pøitáhnout pozornost toho, co se blíí, hlasitım voláním o pomoc s perverzním podtónem.",
+    "Budu se snait olizovat další èásti slizu na stìnì a hledat nìco, co by mì mohlo ještì více poníit.",
+    "Zkusím se soustøedit na zvuky a škrábání, abych zjistil, co se ke mnì blíí, a pøipravím se na setkání."
+  ]
+}
+2025-07-14 06:35:08,788 INFO: 127.0.0.1 - - [14/Jul/2025 06:35:08] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:37:00,523 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:37:00,523 INFO: 127.0.0.1 - - [14/Jul/2025 06:37:00] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:37:00,781 DEBUG: Received POST request: prompt=Pokusím se pøitáhnout pozornost toho, co se blíí, hlasitım voláním o pomoc s perverzním podtónem., max_tokens=2048, temperature=0.7
+2025-07-14 06:37:00,781 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, na perverzní planetì AZ. Jsi uvìznìn v temném, smradlavém sklepení, kde se vzduch tìce nese pachem hniloby a jinıch... specifickıch vùní, které bys moná mohl ocenit. Stìny jsou vlhké, pokryté slizem, a z dálky slyšíš kapání vody – nebo moná nìèeho jiného. Jsi sám, nahı, pøipoutanı øetìzy ke zdi. Tvé tìlo je slabé, ale tvùj perverzní duch hoøí touhou po poníení. Co udìláš?', '> Budu si uívat svého uvìznìní a zkoumat pachy a sliz kolem sebe.', 'Pavle, s radostí se ponoøíš do odporného prostøedí kolem sebe. Zatímco øetìzy drhnou tvou kùi, nakloníš hlavu blíe ke slizkım stìnám a hluboce vdechneš ten tìkı, hnilobnı pach. Tvé smysly jsou pøemoeny a ty cítíš podivnou extázi, kdy se jazykem dotkneš lepkavého slizu na kameni. Je hoøkı, odpornı, a pøesto tì to vzrušuje víc, ne bys èekal. Kapání v dálce se zdá bıt hlasitìjší, jako by se nìco pøibliovalo.', '> Pokusím se pøitáhnout pozornost toho, co se blíí, hlasitım voláním o pomoc s perverzním podtónem.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {}, 'skills': []}], inventory=[], scene=Pavel se nachází v temném sklepení na planetì AZ. Je stále pøipoután øetìzy ke zdi, nahı, obklopenı dusivım zápachem hniloby a slizu. Stìny jsou vlhké, pokryté lepkavou vrstvou, kterou právì ochutnal, a její hoøká chu mu zùstává na jazyku. Kapání v dálce se zesílilo, a z temnoty se zdá, e se ozıvá slabé škrábání, jako by nìco nebo nìkdo byl blízko. Chlad øetìzù na kùi jen zvyšuje tvou touhu po dalším poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:37:13,221 DEBUG: Response from xAI SDK: {
+  "output": "Pavle, zhluboka se nadechneš a zaèneš hlasitì volat o pomoc, tvùj hlas se láme v perverzním tónu, kterı by mohl vzrušit i ty nejodpornìjší bytosti. 'Pomozte mi! Jsem tu sám, nahı a bezbrannı... udìlám cokoli!' Tvùj hlas se odráí od vlhkıch stìn sklepení, zní jako podivná smìs zoufalství a touhy. Škrábání v dálce náhle ustane, a pak uslyšíš tìké, vlhké kroky, které se pøibliují. Nìco se blíí, a zdá se, e tvé volání pøitahuje jeho pozornost – moná a pøíliš.",
+  "scene": "Pavel je stále uvìznìn v temném sklepení na planetì AZ, pøipoután øetìzy ke zdi, nahı a obklopenı odpornım zápachem hniloby a slizu. Stìny jsou vlhké, lepkavé, a hoøká chu slizu, kterı jsi ochutnal, ti stále zùstává na jazyku. Chlad øetìzù drhne tvou kùi, zatímco tvùj perverzní duch touí po dalším poníení. Tìké, vlhké kroky se pøibliují z temnoty, doprovázené hlubokım, chrèivım dıcháním. Z mlhy se vynoøuje silueta – obrovská, deformovaná postava s dlouhımi, slizkımi chapadly, která se pomalu blíí k tobì. Její pach je ještì odpornìjší ne cokoli, co jsi dosud zail, a pøesto tì to podivnì pøitahuje.",
+  "choices": [
+    "Pokusím se s tou bytostí flirtovat a nabídnout jí své tìlo za svobodu.",
+    "Zaènu køièet ještì hlasitìji a prosit o to, aby mì ta bytost poníila.",
+    "Zkusím se z øetìzù vyprostit, zatímco se bytost pøibliuje, a pøedstírat, e jsem její obì."
+  ]
+}
+2025-07-14 06:37:13,222 INFO: 127.0.0.1 - - [14/Jul/2025 06:37:13] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:41:46,920 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:41:46,920 INFO: 127.0.0.1 - - [14/Jul/2025 06:41:46] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:41:47,183 DEBUG: Received POST request: prompt=Zaèni hru. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce., max_tokens=2048, temperature=0.7
+2025-07-14 06:41:47,183 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:41:57,366 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, v temném a páchnoucím sklepení na perverzní planetì AZ. Tvùj pøíchod byl oèekáván. Stojíš uprostøed vlhké místnosti, kde se ozıvá kapání vody a slabé sténání z dálky. Tvùj zenštilı vzhled a sarkastickı úšklebek tì pøedurèují k tomu, abys tady zail poníení, po kterém touíš. Cítíš, jak se tvé vzrušení pomalu zvyšuje, zatímco pach hniloby a špíny proniká do tvıch nosních dírek. Co udìláš dál?",
+  "scene": "Nacházíš se v temném sklepení na planetì AZ. Místnost je vlhká a páchnoucí, stìny jsou pokryté plísní a na zemi je kalu nìèeho, co by mohlo bıt... no, radìji na to nemyslet. V rohu místnosti je starı døevìnı stùl, na kterém leí nìkolik podivnıch pøedmìtù. Ze tmy za tebou slyšíš slabé zvuky – moná kroky, moná nìco horšího. Tvùj penis (20) je pøipraven na akci, zatímco tvé touhy po špínì a poníení rostou (hovna: 34, chcanky: 33).",
+  "choices": [
+    "Prozkoumat starı døevìnı stùl a pøedmìty na nìm.",
+    "Jít smìrem ke zvukùm v temnotì a zjistit, co je vydává.",
+    "Kleknout si do kalue na zemi a poddat se svım nejniším touhám."
+  ]
+}
+2025-07-14 06:41:57,366 INFO: 127.0.0.1 - - [14/Jul/2025 06:41:57] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:54:24,582 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:54:24,582 INFO: 127.0.0.1 - - [14/Jul/2025 06:54:24] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:54:24,822 DEBUG: Received POST request: prompt=Zaèni hru. Jsem postava jménem Pavel, rasa nezadáno, vypadám takto: Hrac, mala postava, velky penis, zzenstily, hezky, a jsem Inteligentni, perverzni, sarkasticky, extremni, miluje hovna povahy. Moje sexualita je Pansexual. Moje atributy jsou {"penis":20,"breasts":3,"vzruseni":10,"chcanky":33,"hovna":34,"kinks":["scat","piss","sissy","pegging","puke","tits","cock","shemale"]}. Moje dovednosti jsou Anal, Sissy, Pig. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce, ber v úvahu mou postavu., max_tokens=150, temperature=0.7
+2025-07-14 06:54:24,822 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:54:28,724 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, ty zvrhlá duše. Tvá touha po poníení tì dovedla do tohoto temného, smradlavého sklepení na perverzní planetì AZ. Cítíš, jak se vzduch lepí na tvou kùi, zatímco tvùj sarkastickı úsmìv skrıvá touhu po extrémech. Jsi pøipraven na vše, co ti tento odpornı svìt mùe nabídnout. Zaèínáme, ty špinavá dìvko.",
+  "scene": "Stojíš v tem
+2025-07-14 06:54:28,724 INFO: 127.0.0.1 - - [14/Jul/2025 06:54:28] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:55:26,639 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:55:26,639 INFO: 127.0.0.1 - - [14/Jul/2025 06:55:26] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:55:26,888 DEBUG: Received POST request: prompt=Zaèni hru. Jsem postava jménem Pavel, rasa nezadáno, vypadám takto: Hrac, mala postava, velky penis, zzenstily, hezky, a jsem Inteligentni, perverzni, sarkasticky, extremni, miluje hovna povahy. Moje sexualita je Pansexual. Moje atributy jsou {"penis":20,"breasts":3,"vzruseni":10,"chcanky":33,"hovna":34,"kinks":["scat","piss","sissy","pegging","puke","tits","cock","shemale"]}. Moje dovednosti jsou Anal, Sissy, Pig. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce, ber v úvahu mou postavu., max_tokens=4096, temperature=0.9
+2025-07-14 06:55:26,888 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:55:37,728 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e jsi pøipraven ponoøit se do svìta poníení a špíny na perverzní planetì AZ. Tvá malá, enštile hezká postava s obrovskım penisem u teï vyvolává pozornost ve tmì tohoto odporného sklepení. Smrad hniloby a vıkalù ti drásá nos, ale pøesto cítíš, jak se tvé vzrušení pomalu zvyšuje. Jsi pøipraven na svou první dávku poníení, ty prasátko?",
+  "scene": "Stojíš v temném, vlhkém sklepení na planetì AZ. Kolem tebe jsou zdi pokryté špínou a plísní, a pod nohama cítíš lepkavou, neidentifikovatelnou tekutinu. Smrad je témìø nesnesitelnı – smìs moèi, vıkalù a nìèeho ještì horšího. Z dálky slyšíš kapání vody a tiché, zlovìstné šepoty. Pøed tebou jsou tøi cesty: elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a starı, shnilı sud, ze kterého vyènívá nìco podezøelého. Tvé vnitøní touhy po špínì a poníení zaèínají bublat na povrch.",
+  "choices": [
+    "Otevøít elezné dveøe a zjistit, co se za nimi skrıvá.",
+    "Prozkoumat úzkou chodbu a ponoøit se hloubìji do tmy.",
+    "Prohledat shnilı sud a zjistit, co v nìm je."
+  ]
+}
+2025-07-14 06:55:37,728 INFO: 127.0.0.1 - - [14/Jul/2025 06:55:37] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:56:54,506 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:56:54,506 INFO: 127.0.0.1 - - [14/Jul/2025 06:56:54] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:56:54,760 DEBUG: Received POST request: prompt=Zaèni hru. Jsem postava jménem Pavel, rasa nezadáno, vypadám takto: Hrac, mala postava, velky penis, zzenstily, hezky, a jsem Inteligentni, perverzni, sarkasticky, extremni, miluje hovna povahy. Moje sexualita je Pansexual. Moje atributy jsou {"penis":20,"breasts":3,"vzruseni":10,"chcanky":33,"hovna":34,"kinks":["scat","piss","sissy","pegging","puke","tits","cock","shemale"]}. Moje dovednosti jsou Anal, Sissy, Pig. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce, ber v úvahu mou postavu., max_tokens=4096, temperature=0.9
+2025-07-14 06:56:54,760 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:57:05,808 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, v tomto temném, odporném sklepení na perverzní planetì AZ. Tvoje malá, enštile pùsobící postava se tøese vzrušením, kdy cítíš ten hnusnı zápach, kterı tì obklopuje. Jsi pøipraven na poníení, jaké sis vdy pøál. Tvùj sarkastickı úsmìv se rozlévá po tváøi, kdy si uvìdomíš, e tady dole mùeš bıt tím, kım skuteènì jsi – perverzní prasátko, co miluje špínu ve všech jejích formách.",
+  "scene": "Stojíš v temném, vlhkém sklepení na planetì AZ, kde je vzduch tìkı od zápachu hniloby, moèi a nìèeho ještì odpornìjšího. Kolem tebe jsou rozbité barely, z nich vytéká nìjaká lepkavá tekutina, a na zemi se válejí hromady špíny. V rohu místnosti je starı, rezavı øetìz pøipevnìnı ke zdi, a z dálky slyšíš kapání vody... nebo moná nìèeho jiného. Tvoje vzrušení roste, kdy si uvìdomíš, e tohle je pøesnì to místo, kde mùeš naplnit své nejhlubší touhy. Tvoje tìlo u teï touí po špatnostech, které tì èekají.",
+  "choices": [
+    "Prozkoumat hromady špíny na zemi a zjistit, co v nich je.",
+    "Pøejít k rezavému øetìzu a zkusit se k nìmu pøipoutat.",
+    "Zavolat do tmy a zjistit, jestli tì nìkdo sleduje nebo na tebe èeká."
+  ]
+}
+2025-07-14 06:57:05,809 INFO: 127.0.0.1 - - [14/Jul/2025 06:57:05] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:57:24,487 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:57:24,487 INFO: 127.0.0.1 - - [14/Jul/2025 06:57:24] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:57:24,799 DEBUG: Received POST request: prompt=Prozkoumat hromady špíny na zemi a zjistit, co v nich je., max_tokens=4096, temperature=0.9
+2025-07-14 06:57:24,799 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, v tomto temném, odporném sklepení na perverzní planetì AZ. Tvoje malá, enštile pùsobící postava se tøese vzrušením, kdy cítíš ten hnusnı zápach, kterı tì obklopuje. Jsi pøipraven na poníení, jaké sis vdy pøál. Tvùj sarkastickı úsmìv se rozlévá po tváøi, kdy si uvìdomíš, e tady dole mùeš bıt tím, kım skuteènì jsi – perverzní prasátko, co miluje špínu ve všech jejích formách.', '> Prozkoumat hromady špíny na zemi a zjistit, co v nich je.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Stojíš v temném, vlhkém sklepení na planetì AZ, kde je vzduch tìkı od zápachu hniloby, moèi a nìèeho ještì odpornìjšího. Kolem tebe jsou rozbité barely, z nich vytéká nìjaká lepkavá tekutina, a na zemi se válejí hromady špíny. V rohu místnosti je starı, rezavı øetìz pøipevnìnı ke zdi, a z dálky slyšíš kapání vody... nebo moná nìèeho jiného. Tvoje vzrušení roste, kdy si uvìdomíš, e tohle je pøesnì to místo, kde mùeš naplnit své nejhlubší touhy. Tvoje tìlo u teï touí po špatnostech, které tì èekají., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:57:38,969 DEBUG: Response from xAI SDK: {
+  "output": "Sarkasticky se ušklebneš, Pavle, a klekneš si na kolena do té odporné špíny. Tvùj zenštilı vzhled kontrastuje s touhou, která tì pohání, kdy zaèínáš rukama prohrabávat hromady lepkavého, páchnoucího odpadu. Tvé vzrušení roste, kdy ucítíš nìco mìkkého a horkého – ano, je to pøesnì to, po èem jsi touil. Smìs hniloby, exkrementù a nìèeho neidentifikovatelného ti lepí na ruce. Tvé srdce buší a tvùj dech se zrychluje. Najdeš malı, slizkı pøedmìt, kterı vypadá jako starı, promoèenı hadr, ale voní jako nìco, co bys mohl... ochutnat. Tvé perverzní já se nemùe doèkat, co s tím udìláš.",
+  "scene": "Stojíš v temném, vlhkém sklepení na planetì AZ, obklopen zápachem hniloby a špíny. Tvoje ruce jsou teï pokryté lepkavou, páchnoucí hmotou z hromad odpadu, které jsi právì prozkoumal. Kolem tebe jsou stále rozbité barely, z nich vytéká neznámá tekutina, a v rohu místnosti visí rezavı øetìz pøipevnìnı ke zdi. Kapání vody – nebo moná nìèeho jiného – zní z dálky jako hypnotická melodie. Dríš v ruce slizkı, starı hadr, kterı jsi našel v hromadì špíny, a tvé tìlo se tøese vzrušením z moností, které pøed tebou leí. Jsi pøipraven ponoøit se ještì hloubìji do svıch nejodpornìjších fantazií.",
+  "choices": [
+    "Ochutnat slizkı hadr a zjistit, co to je.",
+    "Pouít hadr k otøení svého tìla a uít si ten odpornı pocit.",
+    "Odloit hadr a prozkoumat rezavı øetìz v rohu místnosti."
+  ]
+}
+2025-07-14 06:57:38,969 INFO: 127.0.0.1 - - [14/Jul/2025 06:57:38] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 06:58:38,151 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 06:58:38,151 INFO: 127.0.0.1 - - [14/Jul/2025 06:58:38] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 06:58:38,398 DEBUG: Received POST request: prompt=mluv vic sproste, max_tokens=4096, temperature=0.9
+2025-07-14 06:58:38,398 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, v tomto temném, odporném sklepení na perverzní planetì AZ. Tvoje malá, enštile pùsobící postava se tøese vzrušením, kdy cítíš ten hnusnı zápach, kterı tì obklopuje. Jsi pøipraven na poníení, jaké sis vdy pøál. Tvùj sarkastickı úsmìv se rozlévá po tváøi, kdy si uvìdomíš, e tady dole mùeš bıt tím, kım skuteènì jsi – perverzní prasátko, co miluje špínu ve všech jejích formách.', '> Prozkoumat hromady špíny na zemi a zjistit, co v nich je.', 'Sarkasticky se ušklebneš, Pavle, a klekneš si na kolena do té odporné špíny. Tvùj zenštilı vzhled kontrastuje s touhou, která tì pohání, kdy zaèínáš rukama prohrabávat hromady lepkavého, páchnoucího odpadu. Tvé vzrušení roste, kdy ucítíš nìco mìkkého a horkého – ano, je to pøesnì to, po èem jsi touil. Smìs hniloby, exkrementù a nìèeho neidentifikovatelného ti lepí na ruce. Tvé srdce buší a tvùj dech se zrychluje. Najdeš malı, slizkı pøedmìt, kterı vypadá jako starı, promoèenı hadr, ale voní jako nìco, co bys mohl... ochutnat. Tvé perverzní já se nemùe doèkat, co s tím udìláš.', '> mluv vic sproste'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Stojíš v temném, vlhkém sklepení na planetì AZ, obklopen zápachem hniloby a špíny. Tvoje ruce jsou teï pokryté lepkavou, páchnoucí hmotou z hromad odpadu, které jsi právì prozkoumal. Kolem tebe jsou stále rozbité barely, z nich vytéká neznámá tekutina, a v rohu místnosti visí rezavı øetìz pøipevnìnı ke zdi. Kapání vody – nebo moná nìèeho jiného – zní z dálky jako hypnotická melodie. Dríš v ruce slizkı, starı hadr, kterı jsi našel v hromadì špíny, a tvé tìlo se tøese vzrušením z moností, které pøed tebou leí. Jsi pøipraven ponoøit se ještì hloubìji do svıch nejodpornìjších fantazií., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 06:58:52,957 DEBUG: Response from xAI SDK: {
+  "output": "Ach, Pavle, ty špinavı, zvrhlı èuráku, chceš, abych mluvil ještì sprostìji? Tak jo, ty malá, zenštilá dìvko, poslouchej poøádnì, jak ti budu popisovat kadı odpornı detail tohohle hnusnıho sklepení. Tvoje nadrenı tìlíèko se tøese, co? Miluješ ten smrad hoven a chcánek, co se ti lepí na ruce, ty prasátko jedno perverzní. Tak si to uij, ty špinavá coura, protoe tady dole tì èeká ještì víc sraèek, co si mùeš strèit kamkoliv chceš!",
+  "scene": "Stojíš poøád v tom temnım, vlhkım sklepení na perverzní planetì AZ, kde se vzduch doslova dá krájet tím hnusnım smradem hniloby, hoven a chcánek. Tvoje ruce jsou pokrytı tou lepkavou, páchnoucí sraèkou z hromad odpadu, kterı jsi prohrabal jako nìjakı nadrenı prase. Kolem tebe leí rozbitı barely, z nich vytéká nìjaká slizká, odporná tekutina, co by mohla bıt cokoliv – tøeba starı chcanky nebo nìco ještì horšího. V rohu místnosti visí rezavı øetìz, kterı tì láká, abys ho pouil na nìco poøádnì špinavıho. Kapání nìèeho – moná vody, moná nìèeho mnohem šavnatìjšího – tì hypnotizuje jako nìjaká zasraná píseò. Dríš v ruce ten slizkej, starı hadr, co smrdí jako pouitı hajzlpapír, a tvùj obrovskı èurák se tøese vzrušením, protoe víš, e tady dole mùeš bıt tou špinavou dìvkou, co vdycky chceš bıt.",
+  "choices": [
+    "Olíznout ten slizkej hadr a zjistit, jak chutná ta špína.",
+    "Strèit si ruku do jednı z tìch rozbitejch barelù a podívat se, co za sraèku tam najdeš.",
+    "Pøivázat se tím rezavım øetìzem ke zdi a pøedstavit si, jak tì nìkdo poniuje, ty špinavá coura."
+  ]
+}
+2025-07-14 06:58:52,957 INFO: 127.0.0.1 - - [14/Jul/2025 06:58:52] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 07:22:09,059 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 07:22:09,059 INFO: 127.0.0.1 - - [14/Jul/2025 07:22:09] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 07:22:09,299 DEBUG: Received POST request: prompt=Zaèni hru. Jsem postava jménem Pavel, rasa nezadáno, vypadám takto: Hrac, mala postava, velky penis, zzenstily, hezky, a jsem Inteligentni, perverzni, sarkasticky, extremni, miluje hovna povahy. Moje sexualita je Pansexual. Moje atributy jsou {"penis":20,"breasts":3,"vzruseni":10,"chcanky":33,"hovna":34,"kinks":["scat","piss","sissy","pegging","puke","tits","cock","shemale"]}. Moje dovednosti jsou Anal, Sissy, Pig. Jsem v temném, smradlavém sklepení, pøipravenı na poníení. Pøedstav mi situaci a první 3 monosti akce, ber v úvahu mou postavu., max_tokens=4096, temperature=0.9
+2025-07-14 07:22:09,299 DEBUG: Context data: history=['Hra zaèíná...'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Zaèínáme novou hru... pøiprav se na své poníení., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 07:22:22,618 DEBUG: Response from xAI SDK: {
+  "output": "Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e ses rozhodl vstoupit do mého svìta plného špíny a poníení. Tvoje drobná, zenštilá postava a ten tvùj obrovskı nástroj mì u teï fascinují. Smradlavé sklepení, kde se nacházíš, je jen zaèátek tvé cesty za extrémními záitky. Pøiprav se, protoe tvá perverzní povaha tu bude poøádnì otestována.",
+  "scene": "Nacházíš se v temném, vlhkém sklepení na perverzní planetì AZ. Vzduch je tìkı, nasycenı pachem moèi a exkrementù, kterı ti drádí nos a paradoxnì tì vzrušuje. Stìny jsou pokryté špínou a slizem, a na zemi leí hromady odpadkù a podezøelıch skvrn. V rohu místnosti stojí stará, zrezivìlá klec, z ní se ozıvá tiché vrèení. Naproti tobì je tìkı døevìnı stùl, na kterém leí nìkolik podivnıch pøedmìtù – špinavá hadrová panenka, rezavı øetìz a nìco, co vypadá jako pouitı kondom. Ze stropu kapou kapky nìèeho lepkavého pøímo na tvou hlavu. Cítíš, jak tvé vnitøní touhy rostou, a tvùj sarkastickı hlas v hlavì ti øíká, e tohle je pøesnì to místo, kde patøíš.",
+  "choices": [
+    "Prozkoumat klec v rohu a zjistit, co nebo kdo v ní vrèí.",
+    "Pøejít ke stolu a prohlédnout si podivné pøedmìty, moná je pouít.",
+    "Ignorovat vše a zkusit se dotknout lepkavé kapaliny kapající ze stropu, ochutnat ji."
+  ]
+}
+2025-07-14 07:22:22,619 INFO: 127.0.0.1 - - [14/Jul/2025 07:22:22] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 07:23:30,025 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 07:23:30,025 INFO: 127.0.0.1 - - [14/Jul/2025 07:23:30] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 07:23:30,279 DEBUG: Received POST request: prompt=Prozkoumat klec v rohu a zjistit, co nebo kdo v ní vrèí., max_tokens=4096, temperature=0.9
+2025-07-14 07:23:30,279 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e ses rozhodl vstoupit do mého svìta plného špíny a poníení. Tvoje drobná, zenštilá postava a ten tvùj obrovskı nástroj mì u teï fascinují. Smradlavé sklepení, kde se nacházíš, je jen zaèátek tvé cesty za extrémními záitky. Pøiprav se, protoe tvá perverzní povaha tu bude poøádnì otestována.', '> Prozkoumat klec v rohu a zjistit, co nebo kdo v ní vrèí.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Nacházíš se v temném, vlhkém sklepení na perverzní planetì AZ. Vzduch je tìkı, nasycenı pachem moèi a exkrementù, kterı ti drádí nos a paradoxnì tì vzrušuje. Stìny jsou pokryté špínou a slizem, a na zemi leí hromady odpadkù a podezøelıch skvrn. V rohu místnosti stojí stará, zrezivìlá klec, z ní se ozıvá tiché vrèení. Naproti tobì je tìkı døevìnı stùl, na kterém leí nìkolik podivnıch pøedmìtù – špinavá hadrová panenka, rezavı øetìz a nìco, co vypadá jako pouitı kondom. Ze stropu kapou kapky nìèeho lepkavého pøímo na tvou hlavu. Cítíš, jak tvé vnitøní touhy rostou, a tvùj sarkastickı hlas v hlavì ti øíká, e tohle je pøesnì to místo, kde patøíš., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 07:23:45,659 DEBUG: Response from xAI SDK: {
+  "output": "S opatrnım, ale zvìdavım pøístupem se pøibliuješ k zrezivìlé kleci v rohu sklepení. Vrèení se zesiluje, a ti z toho bìhá mráz po zádech – a pøiznejme si to, Pavle, i nìco jiného se ti zvedá. Kdy se podíváš pøes møíe, spatøíš uvnitø podivnou postavu – napùl èlovìka, napùl zvíøe, celé pokryté špínou a slizem. Jeho oèi na tebe upøenì hledí, zatímco z jeho úst kapou sliny smíchané s nìèím, co by mohly bıt... no, øeknìme, e to není káva. Postava zavrèí a olízne si rty, jako by tì zvala blíe. Tvé vnitøní touhy se probouzejí ještì víc – co s tímhle tvorem provedl èas v téhle kleci? A co bys s ním mohl provést ty?",
+  "scene": "Nacházíš se stále v temném, vlhkém sklepení na perverzní planetì AZ. Pach moèi a exkrementù je teï ještì silnìjší, protoe jsi blíe ke kleci, odkud se linou ty nejvıraznìjší 'aromata'. Stìny jsou stále pokryté špínou, a kapky lepkavé tekutiny ze stropu ti teï dopadají na rameno. V kleci pøed tebou je podivnı tvor, jeho vrèení se mísí s obèasnım zavrèením a slintáním. Máš pocit, e tì pozoruje, a moná i nìco víc. Naproti tobì zùstává tìkı døevìnı stùl s podivnımi pøedmìty – špinavou hadrovou panenkou, rezavım øetìzem a pouitım kondomem. Tvé vzrušení roste, Pavle, a tvùj sarkastickı vnitøní hlas ti \u0448\u0435ptá, e tohle je pøesnì ten druh situace, kterı jsi vdycky hledal.",
+  "choices": [
+    "Pokusit se otevøít klec a pustit tvora ven, a u z jakéhokoli dùvodu.",
+    "Prohodit s tvorem pár slov – nebo spíš vrèení – a zjistit, co chce.",
+    "Ignorovat tvora a zamìøit se na prozkoumání pøedmìtù na stole."
+  ]
+}
+2025-07-14 07:23:45,659 INFO: 127.0.0.1 - - [14/Jul/2025 07:23:45] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 07:25:03,720 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 07:25:03,720 INFO: 127.0.0.1 - - [14/Jul/2025 07:25:03] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 07:25:03,973 DEBUG: Received POST request: prompt=Prohodit s tvorem pár slov – nebo spíš vrèení – a zjistit, co chce., max_tokens=4096, temperature=0.9
+2025-07-14 07:25:03,973 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e ses rozhodl vstoupit do mého svìta plného špíny a poníení. Tvoje drobná, zenštilá postava a ten tvùj obrovskı nástroj mì u teï fascinují. Smradlavé sklepení, kde se nacházíš, je jen zaèátek tvé cesty za extrémními záitky. Pøiprav se, protoe tvá perverzní povaha tu bude poøádnì otestována.', '> Prozkoumat klec v rohu a zjistit, co nebo kdo v ní vrèí.', 'S opatrnım, ale zvìdavım pøístupem se pøibliuješ k zrezivìlé kleci v rohu sklepení. Vrèení se zesiluje, a ti z toho bìhá mráz po zádech – a pøiznejme si to, Pavle, i nìco jiného se ti zvedá. Kdy se podíváš pøes møíe, spatøíš uvnitø podivnou postavu – napùl èlovìka, napùl zvíøe, celé pokryté špínou a slizem. Jeho oèi na tebe upøenì hledí, zatímco z jeho úst kapou sliny smíchané s nìèím, co by mohly bıt... no, øeknìme, e to není káva. Postava zavrèí a olízne si rty, jako by tì zvala blíe. Tvé vnitøní touhy se probouzejí ještì víc – co s tímhle tvorem provedl èas v téhle kleci? A co bys s ním mohl provést ty?', '> Prohodit s tvorem pár slov – nebo spíš vrèení – a zjistit, co chce.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Nacházíš se stále v temném, vlhkém sklepení na perverzní planetì AZ. Pach moèi a exkrementù je teï ještì silnìjší, protoe jsi blíe ke kleci, odkud se linou ty nejvıraznìjší 'aromata'. Stìny jsou stále pokryté špínou, a kapky lepkavé tekutiny ze stropu ti teï dopadají na rameno. V kleci pøed tebou je podivnı tvor, jeho vrèení se mísí s obèasnım zavrèením a slintáním. Máš pocit, e tì pozoruje, a moná i nìco víc. Naproti tobì zùstává tìkı døevìnı stùl s podivnımi pøedmìty – špinavou hadrovou panenkou, rezavım øetìzem a pouitım kondomem. Tvé vzrušení roste, Pavle, a tvùj sarkastickı vnitøní hlas ti \u0448\u0435ptá, e tohle je pøesnì ten druh situace, kterı jsi vdycky hledal., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 07:25:18,209 DEBUG: Response from xAI SDK: {
+  "output": "S nervózním, ale vzrušenım pocitem se nakloníš blíe k møíím klece a zkusíš navázat kontakt s tím podivnım tvorem. Tvùj hlas se tøese, kdy vydáváš nìco mezi slovy a vrèením, snaíš se napodobit jeho zvuky. Tvor nakloní hlavu, jeho oèi se zúí a najednou zavrèí hlubokım, témìø lidskım tónem: 'Chci... víc... špíny... dej mi... co máš!' Jeho slova jsou pøerušovaná slintáním a ty cítíš, jak se ti zvedá nejen aludek, ale i nìco jiného. Pavle, tvé perverzní já jásá – tahle situace je pøesnì to, co jsi vdycky chtìl slyšet.",
+  "scene": "Stále se nacházíš v temném, vlhkém sklepení na perverzní planetì AZ. Pach moèi a exkrementù je teï tak intenzivní, e máš pocit, jako bys byl ponoøenı do tekuté špíny. Stìny sklepení jsou pokryté slizem, a kapky lepkavé tekutiny ti dopadají na rameno i do vlasù. Pøed tebou je klec s podivnım tvorem, jeho vrèení se po tvém pokusu o komunikaci zmìnilo v chraplavá slova. Stojíš tak blízko møíí, e cítíš jeho horkı, zatuchlı dech na své tváøi. Tvor tì pozoruje s divokım, hladovım pohledem, jako bys byl jeho další 'jídlo' – nebo nìco mnohem intimnìjšího. Naproti tobì zùstává tìkı døevìnı stùl s podivnımi pøedmìty – špinavou hadrovou panenkou, rezavım øetìzem a pouitım kondomem. Tvùj vnitøní hlas ti \u0448\u0435ptá, e jsi na správné cestì, Pavle, a tvé vzrušení dosahuje novıch vıšin.",
+  "choices": [
+    "Podat tvorovi ruku pøes møíe a zkusit fyzickı kontakt – tøeba po tom touí.",
+    "Zeptat se tvora, co pøesnì myslí 'víc špíny', a nabídnout mu své vlastní... pøíspìvky.",
+    "Odejít od klece a prozkoumat pøedmìty na stole – moná tam najdeš nìco, co by tvorovi 'staèilo'."
+  ]
+}
+2025-07-14 07:25:18,209 INFO: 127.0.0.1 - - [14/Jul/2025 07:25:18] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 19:02:11,391 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-07-14 19:02:11,391 INFO: [33mPress CTRL+C to quit[0m
+2025-07-14 19:02:11,394 INFO:  * Restarting with stat
+2025-07-14 19:02:12,698 WARNING:  * Debugger is active!
+2025-07-14 19:02:12,721 INFO:  * Debugger PIN: 135-088-686
+2025-07-14 19:05:28,223 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 19:05:28,223 INFO: 127.0.0.1 - - [14/Jul/2025 19:05:28] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 19:05:28,478 DEBUG: Received POST request: prompt=Prohledat shnilı sud a zjistit, co v nìm je., max_tokens=4096, temperature=0.9
+2025-07-14 19:05:28,479 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e jsi pøipraven ponoøit se do svìta poníení a špíny na perverzní planetì AZ. Tvá malá, enštile hezká postava s obrovskım penisem u teï vyvolává pozornost ve tmì tohoto odporného sklepení. Smrad hniloby a vıkalù ti drásá nos, ale pøesto cítíš, jak se tvé vzrušení pomalu zvyšuje. Jsi pøipraven na svou první dávku poníení, ty prasátko?', 'Data hry byla importována. Pokraèuj ve svém utrpení!', '> Prohledat shnilı sud a zjistit, co v nìm je.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Stojíš v temném, vlhkém sklepení na planetì AZ. Kolem tebe jsou zdi pokryté špínou a plísní, a pod nohama cítíš lepkavou, neidentifikovatelnou tekutinu. Smrad je témìø nesnesitelnı – smìs moèi, vıkalù a nìèeho ještì horšího. Z dálky slyšíš kapání vody a tiché, zlovìstné šepoty. Pøed tebou jsou tøi cesty: elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a starı, shnilı sud, ze kterého vyènívá nìco podezøelého. Tvé vnitøní touhy po špínì a poníení zaèínají bublat na povrch., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 19:05:46,878 DEBUG: Response from xAI SDK: {
+  "output": "S odporem, ale zároveò s rostoucím vzrušením, se nakloníš nad shnilı sud a zaèneš prohrabávat jeho obsah. Smrad je tak silnı, e ti slzí oèi, ale tvá perverzní duše tì ene dál. Uvnitø nacházíš hnijící zbytky nìèeho, co pøipomíná maso, a lepkavou, hnìdou hmotu, která páchne jako vıkaly. Najednou se tvé prsty dotknou nìèeho tvrdého – je to malá, slizká lahvièka s neznámou tekutinou. Tvé vzrušení stoupá, Pavle, ty špinavé prasátko. Co teï?",
+  "scene": "Stojíš v temném, vlhkém sklepení na planetì AZ, stále obklopen špínou a plísní. Smrad z otevøeného sudu je teï ještì intenzivnìjší, a hnìdá hmota uvnitø sudu ti pøipomíná tvé nejhlubší touhy. V ruce dríš slizkou lahvièku s neznámou tekutinou, která slabì svìtélkuje. Pod nohama cítíš lepkavou tekutinu a z dálky slyšíš kapání vody a zlovìstné šepoty. Pøed tebou jsou elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a otevøenı sud, kterı tì láká svou odporností. Tvé vnitøní touhy po poníení a špínì jsou teï silnìjší ne kdy døív.",
+  "choices": [
+    "Otevøít lahvièku a zjistit, co je uvnitø.",
+    "Ponoøit ruku hloubìji do sudu a prohledat hnìdou hmotu.",
+    "Ignorovat sud a vydat se k eleznım dveøím."
+  ]
+}
+2025-07-14 19:05:46,879 INFO: 127.0.0.1 - - [14/Jul/2025 19:05:46] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 19:07:14,974 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 19:07:14,974 INFO: 127.0.0.1 - - [14/Jul/2025 19:07:14] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 19:07:15,229 DEBUG: Received POST request: prompt=Ponoøit ruku hloubìji do sudu a prohledat hnìdou hmotu., max_tokens=4096, temperature=0.9
+2025-07-14 19:07:15,230 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e jsi pøipraven ponoøit se do svìta poníení a špíny na perverzní planetì AZ. Tvá malá, enštile hezká postava s obrovskım penisem u teï vyvolává pozornost ve tmì tohoto odporného sklepení. Smrad hniloby a vıkalù ti drásá nos, ale pøesto cítíš, jak se tvé vzrušení pomalu zvyšuje. Jsi pøipraven na svou první dávku poníení, ty prasátko?', 'Data hry byla importována. Pokraèuj ve svém utrpení!', '> Prohledat shnilı sud a zjistit, co v nìm je.', 'S odporem, ale zároveò s rostoucím vzrušením, se nakloníš nad shnilı sud a zaèneš prohrabávat jeho obsah. Smrad je tak silnı, e ti slzí oèi, ale tvá perverzní duše tì ene dál. Uvnitø nacházíš hnijící zbytky nìèeho, co pøipomíná maso, a lepkavou, hnìdou hmotu, která páchne jako vıkaly. Najednou se tvé prsty dotknou nìèeho tvrdého – je to malá, slizká lahvièka s neznámou tekutinou. Tvé vzrušení stoupá, Pavle, ty špinavé prasátko. Co teï?', '> Ponoøit ruku hloubìji do sudu a prohledat hnìdou hmotu.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Stojíš v temném, vlhkém sklepení na planetì AZ, stále obklopen špínou a plísní. Smrad z otevøeného sudu je teï ještì intenzivnìjší, a hnìdá hmota uvnitø sudu ti pøipomíná tvé nejhlubší touhy. V ruce dríš slizkou lahvièku s neznámou tekutinou, která slabì svìtélkuje. Pod nohama cítíš lepkavou tekutinu a z dálky slyšíš kapání vody a zlovìstné šepoty. Pøed tebou jsou elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a otevøenı sud, kterı tì láká svou odporností. Tvé vnitøní touhy po poníení a špínì jsou teï silnìjší ne kdy døív., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 19:07:35,453 DEBUG: Response from xAI SDK: {
+  "output": "S rostoucím vzrušením ponoøíš ruku hloubìji do sudu, a se tvé prsty zcela ponoøí do teplé, lepkavé hnìdé hmoty. Smrad je tak intenzivní, e se ti motá hlava, ale tvá perverzní duše tì ene dál, Pavle, ty špinavé prasátko. Hmota se ti lepí na kùi, a najednou cítíš nìco mìkkého a houbovitého, co se pod tvımi prsty rozpadá. Tvé vzrušení stoupá na novou úroveò, kdy si uvìdomíš, e to mùe bıt nìco opravdu odporného. Zároveò tì høeje pocit poníení, jak hluboko jsi klesl.",
+  "scene": "Stojíš v temném, vlhkém sklepení na planetì AZ, obklopen špínou a plísní, s rukou stále ponoøenou v otevøeném sudu plném hnìdé, páchnoucí hmoty. Smrad je teï tak silnı, e ti slzí oèi, ale tvé vnitøní touhy po poníení a špínì jsou silnìjší ne kdy døív. V ruce stále dríš slizkou lahvièku s neznámou tekutinou, která slabì svìtélkuje. Pod nohama cítíš lepkavou tekutinu a z dálky slyšíš kapání vody a zlovìstné šepoty. Pøed tebou jsou elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a sud, kterı tì stále láká svou odporností. Tvá ruka je pokrytá hnìdou hmotou, a pocit poníení tì naplòuje perverzní radostí.",
+  "choices": [
+    "Vytáhnout ruku ze sudu a olíznout hnìdou hmotu, abys zjistil, co to je.",
+    "Zkusit otevøít elezné dveøe, i kdy máš ruku pokrytou špínou.",
+    "Prozkoumat slizkou lahvièku a zjistit, co obsahuje."
+  ]
+}
+2025-07-14 19:07:35,453 INFO: 127.0.0.1 - - [14/Jul/2025 19:07:35] "POST /api/grok HTTP/1.1" 200 -
+2025-07-14 19:09:20,013 DEBUG: Handled OPTIONS request for /api/grok
+2025-07-14 19:09:20,013 INFO: 127.0.0.1 - - [14/Jul/2025 19:09:20] "OPTIONS /api/grok HTTP/1.1" 200 -
+2025-07-14 19:09:20,253 DEBUG: Received POST request: prompt=Vytáhnout ruku ze sudu a olíznout hnìdou hmotu, abys zjistil, co to je., max_tokens=4096, temperature=0.9
+2025-07-14 19:09:20,253 DEBUG: Context data: history=['Hra zaèíná...', 'Vítej, Pavle, ty zvrhlá duše. Jsem potìšen, e jsi pøipraven ponoøit se do svìta poníení a špíny na perverzní planetì AZ. Tvá malá, enštile hezká postava s obrovskım penisem u teï vyvolává pozornost ve tmì tohoto odporného sklepení. Smrad hniloby a vıkalù ti drásá nos, ale pøesto cítíš, jak se tvé vzrušení pomalu zvyšuje. Jsi pøipraven na svou první dávku poníení, ty prasátko?', 'Data hry byla importována. Pokraèuj ve svém utrpení!', '> Prohledat shnilı sud a zjistit, co v nìm je.', 'S odporem, ale zároveò s rostoucím vzrušením, se nakloníš nad shnilı sud a zaèneš prohrabávat jeho obsah. Smrad je tak silnı, e ti slzí oèi, ale tvá perverzní duše tì ene dál. Uvnitø nacházíš hnijící zbytky nìèeho, co pøipomíná maso, a lepkavou, hnìdou hmotu, která páchne jako vıkaly. Najednou se tvé prsty dotknou nìèeho tvrdého – je to malá, slizká lahvièka s neznámou tekutinou. Tvé vzrušení stoupá, Pavle, ty špinavé prasátko. Co teï?', '> Ponoøit ruku hloubìji do sudu a prohledat hnìdou hmotu.', 'S rostoucím vzrušením ponoøíš ruku hloubìji do sudu, a se tvé prsty zcela ponoøí do teplé, lepkavé hnìdé hmoty. Smrad je tak intenzivní, e se ti motá hlava, ale tvá perverzní duše tì ene dál, Pavle, ty špinavé prasátko. Hmota se ti lepí na kùi, a najednou cítíš nìco mìkkého a houbovitého, co se pod tvımi prsty rozpadá. Tvé vzrušení stoupá na novou úroveò, kdy si uvìdomíš, e to mùe bıt nìco opravdu odporného. Zároveò tì høeje pocit poníení, jak hluboko jsi klesl.', '> Vytáhnout ruku ze sudu a olíznout hnìdou hmotu, abys zjistil, co to je.'], characters=[{'name': 'Pavel', 'appearance': 'Hrac, mala postava, velky penis, zzenstily, hezky', 'personality': 'Inteligentni, perverzni, sarkasticky, extremni, miluje hovna', 'sexuality': 'Pansexual', 'attributes': {'penis': 20, 'breasts': 3, 'vzruseni': 10, 'chcanky': 33, 'hovna': 34, 'kinks': ['scat', 'piss', 'sissy', 'pegging', 'puke', 'tits', 'cock', 'shemale']}, 'skills': ['Anal', 'Sissy', 'Pig']}], inventory=[], scene=Stojíš v temném, vlhkém sklepení na planetì AZ, obklopen špínou a plísní, s rukou stále ponoøenou v otevøeném sudu plném hnìdé, páchnoucí hmoty. Smrad je teï tak silnı, e ti slzí oèi, ale tvé vnitøní touhy po poníení a špínì jsou silnìjší ne kdy døív. V ruce stále dríš slizkou lahvièku s neznámou tekutinou, která slabì svìtélkuje. Pod nohama cítíš lepkavou tekutinu a z dálky slyšíš kapání vody a zlovìstné šepoty. Pøed tebou jsou elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a sud, kterı tì stále láká svou odporností. Tvá ruka je pokrytá hnìdou hmotou, a pocit poníení tì naplòuje perverzní radostí., locations=[{'name': 'AZ', 'desc': 'Perverzni planeta'}]
+2025-07-14 19:09:38,022 DEBUG: Response from xAI SDK: {
+  "output": "S pomalım, témìø rituálním pohybem vytáhneš ruku ze sudu. Hnìdá, lepkavá hmota ti pomalu stéká po prstech a zápach je tak silnı, e se ti zatmí pøed oèima. Pøesto, Pavle, ty špinavé prasátko, se nedokáeš zastavit. Zvedneš ruku k ústùm a jazykem opatrnì ochutnáš tu odpornou hmotu. Chu je hoøká, kyselá a pøipomíná nìco mezi shnilım masem a exkrementy. Tvùj aludek se zvedá, ale zároveò cítíš, jak se tvé vzrušení zvyšuje na novou, perverzní úroveò. Jsi zcela ponoøen do svého poníení a touíš po víc.",
+  "scene": "Stojíš v temném, vlhkém sklepení na planetì AZ, obklopen špínou a plísní. Tvá ruka je stále pokrytá hnìdou, páchnoucí hmotou, její chu ti zùstává v ústech – hoøká, odporná, a pøesto podivnì pøitalivá. Smrad je tak silnı, e ti slzí oèi, ale tvé vnitøní touhy po poníení a špínì tì enou dál. V ruce stále dríš slizkou lahvièku s neznámou tekutinou, která slabì svìtélkuje. Pod nohama cítíš lepkavou tekutinu a z dálky slyšíš kapání vody a zlovìstné šepoty. Pøed tebou jsou elezné dveøe pokryté rzí, úzká chodba vedoucí do tmy, a sud, kterı tì stále láká svou odporností. Tvé tìlo vibruje perverzní radostí, jak hluboko jsi klesl, Pavle.",
+  "choices": [
+    "Ponoøit ruku zpìt do sudu a natøít si hnìdou hmotu na oblièej, abys se ještì více poníil.",
+    "Otevøít slizkou lahvièku a ochutnat neznámou tekutinu, která svìtélkuje.",
+    "Pøejít k eleznım dveøím a pokusit se je otevøít, i kdy jsou pokryté rzí."
+  ]
+}
+2025-07-14 19:09:38,023 INFO: 127.0.0.1 - - [14/Jul/2025 19:09:38] "POST /api/grok HTTP/1.1" 200 -
